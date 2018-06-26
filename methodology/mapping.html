@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Requirements - solution mapping</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Interoperability methodology</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../methodology/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/baseline_methodology.html" title="Baseline interoperability methodology">Baseline interoperability methodology</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/bif.html" title="Business interoperability framework (BIF)">Business interoperability framework (BIF)</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/eimm.html" title="Enterprise interoperability maturity model (EIMM)">Enterprise interoperability maturity model (EIMM)</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/analysis.html" title="Interoperability analysis">Interoperability analysis</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Requirements - solution mapping</div>
+</div>
+<div class="menuitem">
+<a href="../methodology/testing.html" title="Testing methodology">Testing methodology</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/implementation.html" title="Implementation">Implementation</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/iiam.html" title="Interoperability impact analysis method (IIAM)">Interoperability impact analysis method (IIAM)</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="mapping.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Requirements - solution mapping</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Annotation+of+business+needs+and+solution">Annotation of business needs and solution</a>
+</li>
+<li>
+<a href="#Mapping+application+by+using+the+Prot%C3%A9g%C3%A9+toolset">Mapping application by using the Prot&eacute;g&eacute; toolset</a>
+</li>
+<li>
+<a href="#Analysis">Analysis</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Introduction"></a>
+<h2 class="underlined_10">Introduction</h2>
+<div class="section">
+<p>The objective of the &ldquo;Requirements &ndash; Solution mapping is to find correspondences between solutions and requirements in order to compare expectations and requested solutions. In order to do this, similar conditions are necessary according to the interoperability context coming from different sources like role of organisation, business process type etc. For sure an 1:1 mapping is due to the fact of diversity on both sides not possible. Based on more than 600 ATHENA requirements, the mapping can be done by linking business needs and solutions. In this context requirements play the role for deeper specification of the industrial or scientific problem in order to support implementation. The approach is to map Business Needs (which are 1:1 correspondent to the interoperability issues) to solutions by using common context elements. This means if a business need has a similar context to a given generic interoperability solution, specific solutions can be selected in order being implemented by specific (ATHENA) solutions. Generic solutions can be seen as interoperability functions which can be combined for solving a more or less complex interoperability problem (challenge) as stated in business needs.</p>
+<p>The common context plays the glue between both generic solutions and business needs. By having introduced this middle layer specific solutions and specific requirements can be related as well.</p>
+<p>
+<br>
+<img alt="" src="mapping_files/mappin9.gif"></p>
+</div>
+<a name="N1001D"></a><a name="Annotation+of+business+needs+and+solution"></a>
+<h2 class="underlined_10">Annotation of business needs and solution</h2>
+<div class="section">
+<p>The contextualisation consist on eight elements</p>
+<ul>
+<li>AIF &ndash; Railroad levels: Framework which relates the ATHENA Solutions to interoperability levels: business, process, service, data see D.A4.2</li>
+<li>AREA of Concern: regarding to the EIMM levels (see chapter before)</li>
+<li>Business Process Relation: With this element we define whether a business need is specific to the business case under study (Product Portfolio Management, e-Procurement etc) or not.</li>
+<li>Collaboration Type: This element gives an idea in which organisational relations business partners are &ndash; from simple buyer and seller to virtual enterprises.</li>
+<li>Interoperability life cycle step as proposed by A4 (sub groups of run and design time) and the issues between the steps<ul>
+<li>Design Time: Analysis, Negotiation</li>
+<li>Run Time: Realisation and Operation</li>
+</ul>
+</li>
+<li>MDA artifact: Here the MDA levels from Computational Independent Model (CIM) down to Platform independent model (PIM), Platform Specific Model (PSM) and Source Code are considered.</li>
+<li>Quality Condition: This element is used for identifying whether the business need or a solutions addresses:<ul>
+<li>Quality Improvement</li>
+<li>Time reduction</li>
+<li>Cost reduction</li>
+<li>Increase Flexibility</li>
+</ul>
+</li>
+<li>User Perspective: is important to identify the main stakeholder of an interoperability requester and the related solution. Here the 10 types of Roles are selected which are identified by the B6 project: <ul>
+<li>Business related Role<ul>
+<li>Business Manager</li>
+<li>Business Process Analyst</li>
+<li>IT Manager</li>
+</ul>
+</li>
+<li>IT System related Role<ul>
+<li>System Architect</li>
+<li>System Designer</li>
+<li>System Responsible</li>
+<li>Developer</li>
+</ul>
+</li>
+<li>IT Application oriented Role<ul>
+<li>Unit Manager</li>
+<li>Performance Engineer</li>
+<li>Software User</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The Generic Solutions that were identified are clustered into four groups derived from the AIF framework and the requested solutions by B5:</p>
+<ul>
+<li>Model related Solutions<ul>
+<li>Create Model &ndash; to enable model elaboration</li>
+<li>Execute Model (transform data) &ndash; solution to use a model for (automatic) data transformation</li>
+<li>Transform Model horizontally between different application on the same AIF railroad level (on all levels: Business to Business: Process to Process: Services to Service : Data to Data).</li>
+<li>Transform Model vertically between the different AIF railroad levels (from business to data or vice versa)</li>
+<li>Enrich models by additional information in order to improve capabilities</li>
+<li>Create compatible views of models in order to allow comparison between different systems which are reflected by the models</li>
+<li>Mapping of data in models to link data to models</li>
+</ul>
+</li>
+<li>SW Component related solution<ul>
+<li>Searching (e.g. for a software service)</li>
+<li>Selecting (e.g. by using profiles or conditions and criteria&rsquo;s as well in a runtime environment)</li>
+<li>Invocation &ndash; into existing systems (e.g. in a runtime environment)</li>
+</ul>
+</li>
+<li>Analysis and Testing<ul>
+<li>Assessment of the state of the art of a given system as well against a to be profile</li>
+<li>Conformance test &ndash; in runtime against a given specification</li>
+<li>Logic test &ndash; as well conceptually</li>
+<li>Performance test &ndash; by using given parameters</li>
+<li>Search for content &ndash; based on given parameters</li>
+</ul>
+</li>
+<li>Connectivity<ul>
+<li>Naming - semantic</li>
+<li>Provide Connection - physically</li>
+<li>Routing (messages and models) - logically</li>
+</ul>
+</li>
+</ul>
+<p>As it has been already mentioned, the generic solutions can be seen as interoperability functions which can be combined into a holistic scenario. This means that a given &ldquo;Business Need&rdquo; can require several interoperability functions. For example the business need &ldquo;Derive from process structure of a PLM application the business logic and compare this with other PLM application and their procedural structure&rdquo; requires two different interoperability functions as can be seen in the figure below.</p>
+<p>
+<img alt="" src="mapping_files/transform_model.png"></p>
+<p>In order to support the analysis of a &ldquo;Business Need&rdquo; the ATHENA railroad has to be used as the major pattern. For the Business Need example we could indicate the source level of a given model (internal process structure), the derived target model (business model) and the transformation on &ldquo;Business Level&rdquo; because a comparison with an other application is required.</p>
+<p>
+<img alt="" src="mapping_files/railroad.png"></p>
+</div>
+<a name="N1009F"></a><a name="Mapping+application+by+using+the+Prot%C3%A9g%C3%A9+toolset"></a>
+<h2 class="underlined_10">Mapping application by using the Prot&eacute;g&eacute; toolset</h2>
+<div class="section">
+<p>The contextualization of business needs and generic solutions is done by using the Prot&eacute;g&eacute; toolset [Stanford Medical Informatics]. Prot&eacute;g&eacute; was used to federate information coming from the different data repositories developed by ATHENA within a single knowledge base, called the harmonization model, which contents the different classification used within the ATHENA project. The goal was to enable mapping formalisation between specific requirements, generic requirements, generic solutions and specific solutions. In addition, advanced querying and visualization tools allowed easily analysing this mapping without any development. See [Figay] for more information about the knowledge base and how to perform queries.</p>
+<p>In the figure below the contextualization of a business need in Prot&eacute;g&eacute; can be seen. The context elements are modelled as classes. Instances of the classes are the possible values. E.g. &ldquo;Context Element AIF_Level&rdquo; is a subclass of &ldquo;ATHENA_Context Element&rdquo;, CIM is an instance of this Class and can be used for annotating a given Business Need (here &ldquo;Efficient development of a standard model&rdquo;). The annotation is possible because each &ldquo;Business Need&rdquo; and each &ldquo;Generic Solution&rdquo; has the Class: &ldquo;Contextualized Element&rdquo; as additional Parent Class as can be seen as &ldquo;Asserted Types&rdquo;.</p>
+<p>
+<img alt="" src="mapping_files/contextualization.png"></p>
+<p>The same contextualization is done with the generic solutions as well with the related specific solutions coming from the ATHENA research and development activities but only regarding the MDA and AIF Levels. On both items an annotation is possible from Generic and Specific Solutions because, a differentiation is in some cases not applicable.</p>
+</div>
+<a name="N100AD"></a><a name="Analysis"></a>
+<h2 class="underlined_10">Analysis</h2>
+<div class="section">
+<p>Prot&eacute;g&eacute; is now used for mapping &ldquo;Business Needs&rdquo; and the &ldquo;ATHENA Specific Solutions&rdquo; based on the Generic Solutions and specifically related to the context elements as figured out in the figure below. Prot&eacute;g&eacute; provide two alternatives for analysis:</p>
+<ul>
+<li>Graphical analysis based on the Jambalaya plugin</li>
+<li>Queries for filtering and combining context elements and groups of solutions and &ldquo;Business Needs&rdquo;</li>
+</ul>
+<p>The graphical analysis gives a very short overview about gaps between &ldquo;Business Needs&rdquo; related to the pilots and the required solutions coming from ATHENA.</p>
+<p>By applying filtering, the relevant major items for mapping can be highlighted. These are: Generic Solutions as glue for combining &ldquo;Business Needs&rdquo; and &ldquo;Simple Solutions&rdquo; as well for detailed analysis the link to the &ldquo;Context Elements and &ldquo;Composed Solutions&rdquo;. By expanding the container the relationships between the items can be identified and analysed.</p>
+<p>
+<img alt="" src="mapping_files/protege.png"></p>
+<p>Of course the first view seems to be very complex, but by zooming and filtering gaps and related issues can be pointed out very fast. So for instance clusters of a proliferation of solutions can be identified as well not used solution parts like the &ldquo;Generic Solution&rdquo;: &ldquo;Search for SW Component&rdquo; is neither implemented as a &ldquo;Simple Solution&rdquo; nor requested by a &ldquo;Business Need&rdquo;.</p>
+<p>The Prot&eacute;g&eacute; 3.2 OWL plug-in includes a SPARQL query panel that allows performing SPARQL queries. SPARQL is a query language for getting information from RDF graphs. It provides facilities to:</p>
+<ul>
+<li>Extract information in the form of URIs, blank nodes, plain and typed literals.</li>
+<li>Extract RDF subgraphs.</li>
+<li>Construct new RDF graphs based on information in the queried graphs.</li>
+</ul>
+<p>SPARQL can be used with OWL. OWL is an extension of RDF (Resource Description Framework). SPARQL is a language and set of APIs specified by W3C, and that can be consulted at <a href="http://www.w3.org/TR/rdf-sparql-query/">http://www.w3.org/TR/rdf-sparql-query/</a> and is using as well RDFS (RDF-Schema).</p>
+<p>One example is to display matching Business needs to generic solutions through the Context Element &ldquo;Area of concern&rdquo; The idea here is to obtain list of business needs related to generic solution through a same area of concern. We also expect to obtain the name property of needs and generic solutions.</p>
+<div style="mso-element:para-border-div;border:solid windowtext 1.0pt; mso-border-alt:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">SELECT ?businessNeed ?genericSolution ?areaOfConcern<p class="MsoNormal">WHERE {</p>
+<p class="MsoNormal">?y :Name ?genericSolution.</p>
+<p class="MsoNormal">?x :Name ?businessNeed.</p>
+<p class="MsoNormal">?z :Name ?areaOfConcern.</p>
+<p class="MsoNormal">?y :AreaOfConcern_Context ?z.</p>
+<p class="MsoNormal">?x :AreaOfConcern_Context ?z.</p>
+<p class="MsoNormal">?x rdf:type :ATHENA_BusinessNeed .</p>
+<p class="MsoNormal">?y rdf:type :Generic_solution .</p>
+<p class="MsoNormal">}</p>
+</div>
+<p class="MsoNormal">
+<img alt="" src="mapping_files/mappin12.gif">&nbsp;</p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

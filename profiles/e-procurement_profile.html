@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Electronic procurement (e-Procurement) profile</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Interoperability profiles</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../profiles/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../profiles/profiles_guidelines.html" title="Guidelines for interoperability profiles">Guidelines for interoperability profiles</a>
+</div>
+<div class="menuitem">
+<a href="../profiles/scm_profile.html" title="Collaborative product development (CPD) profile">Collaborative product development (CPD) profile</a>
+</div>
+<div class="menuitem">
+<a href="../profiles/cpd_profile.html" title="Networked collaborative product development (NCPD) profile">Networked collaborative product development (NCPD) profile</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Electronic procurement (e-Procurement) profile</div>
+</div>
+<div class="menuitem">
+<a href="../profiles/ppm_profile.html" title="Product portfolio management (PPM) profile">Product portfolio management (PPM) profile</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="e-procurement_profile.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Electronic procurement (e-Procurement) profile</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Furniture+pilot">Furniture pilot</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Furniture+pilot"></a>
+<h2 class="underlined_10">Furniture pilot</h2>
+<div class="section">
+<p>This is about improving the document flow, messaging and decision-making among core shareholders within the request for quotation (RFQ) and the order flow, including an interior decoration project, integrating Order Management System (OMS), Product Data Management (PDM), and a usual accounting systems for order handling, delivery and invoicing. The Infrastructure architecture is composed of a SAP suite of tools, the ATHENA semantic reconciliation suite and the STEP transformation tools, representing a typical order-supplier CBP with control of business document flows.</p>
+<p>The furniture procurement scenario, see figure below, involves four stakeholders: furniture manufacturer, raw-material supplier, retailer and customer. Although the document flow is started by the retailer, the action starts when a costumer looks for furniture at the Retailer&rsquo;s facilities or website. The costumer browses the catalogue and asks the salesman to obtain a quotation for the desired furniture products.</p>
+<ul>
+<li>The Retailer starts the procurement document flow process by sending to the Manufacturer the R1. Request for Quotation document to obtain the current product price list according to the costumer desires. The information included in the R1 document is mainly composed by a product list with the corresponding specifications such as finishing, handles, fabrics and special measurements or cuts. Additionally, the Retailer might send the R1 document with an interior Decoration Project attached.</li>
+<li>Once the R1 document is at Manufacturer&rsquo;s side, specifically at the Sales Dept, the internal process regarding to the quotation process.</li>
+<li>To accept the quotation sent by the Manufacturer, the Retailer has to perform the R3. Order Document including a reference to the quotation. The Retailer might include also the decoration project as an attached draft of the ordered products. Once the R3 document arrives to the Sales Dept, the Manufacturer processes the document.</li>
+<li>At this moment, Sales sends to the Production Dept the list of ordered products. This department plans the product manufacturing by calculating the amount of raw material that is necessary to produce the goods. If there is any lack of raw material, Procurement Dept is asked for it.</li>
+<li>Eventually, during the manufacturing process, the Retailer might start a Customer Communication process to know the current status of the order.</li>
+<li>Once the product is manufactured, the different parts of the furniture are packaged. The packages are identified and sent to storage waiting for the shipping and being prepared to be loaded into the transportation.</li>
+<li>While this process is being performed, the Administration Dept prepares the last documents to be sent to the Retailer: R5. Delivery Note and R7. Invoice documents. Additionally, the Production Dept prepares the R6. Packing List which is the product list contained in the R5 broken down in the different identified packages.</li>
+<li>The products are loaded into the transportation and sent to the Retailer accompanied with the R5 and R6 documents. The Retailer signs the R5 and returns it to the Manufacturer who finally sends the invoice (R7).</li>
+</ul>
+<p>
+<img alt="" src="e-procurement_profile_files/procurement_scenario.png"></p>
+<p>The different ATHENA solutions used in the implementation of the pilot infrastructure are shown in the figure below are:</p>
+<ul>
+<li>GRAI Tools: Tool to model the internal business processes of the stakeholders involved in the furniture scenario. During ATHENA a link to Maestro was developed which allows GRAI enterprise models to be imported into Maestro.</li>
+<li>Maestro: Tool to model a collaborative environment based on the work done by Enterprise Modelling tools which will help in the development and improvement of the Business Processes of each actor.</li>
+<li>Nehemiah: Tool to simulate the CBP model developed under Maestro.</li>
+<li>Gabriel: Tool to orchestrate the Process and the Messages.</li>
+<li>Johnson: System which will act as a kind of Outlook. This tool is going to act as a front-end of the different actors and will have uploaded the Web Services to receive and send documents.</li>
+<li>A*: Semantic Annotation Tool used to annotate different instances of the same document to allow the reconciliation and the matching between different documents against the same concepts.</li>
+<li>ARGOS: Rules Generation Tool used to generate the run-time tools for checking and annotating documents.</li>
+<li>ARES: Run time environment. This tool will be uploaded into Johnson as a plug-in, so this will allow the reconciliation and annotation on run-time the documents. Additionally ARES will help in validating the semantic of the documents against the ontology.</li>
+<li>Conformance Test: Tool to perform the validation of the documents both syntactically and basic-semantically against the XML Schema documents. The CT tool, as ARES, will be uploaded into Johnson to allow all the users to check the validity of documents.</li>
+<li>EXP2XSD, EXP2SCH, and EXP2XMI: These transformation tools will be used for transforming the EXPRESS schemas into a more machine-understandable language, such as XML</li>
+</ul>
+<p>
+<img alt="" src="e-procurement_profile_files/procurement_profile.png"></p>
+<p>Apart from these tools, AIDIMA has used the following ATHENA solutions which are not related to any Interoperability Issue in particular. These tools are:</p>
+<ul>
+<li>ATHOS: ATHENA Ontology Management System to create and manage ontologies. Under the scenario it has been uploaded the furniture ontology developed under the funStep projects.</li>
+<li>EXP2PIM4SOA2WSDL: STEP transformation tool used for transforming the EXPRESS schemas into Web services descriptions.</li>
+</ul>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

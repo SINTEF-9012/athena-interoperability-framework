@@ -1,0 +1,777 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Characterisation of interoperability issues</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Reference architecture</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../reference_architecture/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../reference_architecture/reference_model.html" title="Interoperability reference architecture">Interoperability reference architecture</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Interoperability classification</div>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="characterisation.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Characterisation of interoperability issues</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Interoperability+classification">Interoperability classification</a>
+<ul class="minitoc">
+<li>
+<a href="#Business+management">Business management</a>
+</li>
+<li>
+<a href="#Process+management">Process management</a>
+</li>
+<li>
+<a href="#Knowledge+management">Knowledge management</a>
+</li>
+<li>
+<a href="#Information+management">Information management</a>
+</li>
+<li>
+<a href="#Software+management">Software management</a>
+</li>
+<li>
+<a href="#Data+management">Data management</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Interoperability+classification"></a>
+<h2 class="underlined_10">Interoperability classification</h2>
+<div class="section">
+<p>Taxonomic classification is the act of placing an object or concept into a set or sets of categories based on the properties of the object or concept. <em>Interoperability classification</em> focuses on relating <em>interoperability issues</em> with <em>solutions</em>. This can be through a <em>classification schema</em> which defines a set of <em>categories</em>.</p>
+<p>The ATHENA deliverable [ATHENA B4 2006b] identifies 31 <em>interoperability issues</em>. The interoperability issues are classified according to business management (BM), process management (PM), knowledge management (PM), information management (IM), service management (SM) and data management (DM). The table below presents an overview of the <em>interoperability issues</em> identified. The issues are further described below.</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+<tr>
+<td class="ms-prof-tl" style="background-position: 0% 0%; border:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>Issue</strong>
+</p>
+</td><td class="ms-prof-top" style="background-position: 0% 0%; border-left:medium none; border-right:1.0pt solid black; border-top:1.0pt solid black; border-bottom:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>BM</strong>
+</p>
+</td><td class="ms-prof-top" style="background-position: 0% 0%; border-left:medium none; border-right:1.0pt solid black; border-top:1.0pt solid black; border-bottom:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>PM</strong>
+</p>
+</td><td class="ms-prof-top" style="background-position: 0% 0%; border-left:medium none; border-right:1.0pt solid black; border-top:1.0pt solid black; border-bottom:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>KM</strong>
+</p>
+</td><td class="ms-prof-top" style="background-position: 0% 0%; border-left:medium none; border-right:1.0pt solid black; border-top:1.0pt solid black; border-bottom:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>IM</strong>
+</p>
+</td><td class="ms-prof-top" style="background-position: 0% 0%; border-left:medium none; border-right:1.0pt solid black; border-top:1.0pt solid black; border-bottom:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>SM</strong>
+</p>
+</td><td class="ms-prof-top" style="background-position: 0% 0%; border-left:medium none; border-right:1.0pt solid black; border-top:1.0pt solid black; border-bottom:1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm; background-image:none; background-repeat:repeat; background-attachment:scroll">
+<p>
+<strong>DM</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Business processes "hard-coded" in applications</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM1</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Manual business processes</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM2</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Linking decision-making activities</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM3</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Aggregated views of business information</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM4</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Translating strategic goals</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM5</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Inferring benefits of objectives</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM6</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Support effective decision-making</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>BM7</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Focus on process management</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>PM1</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Process interoperability</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>PM2</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Shorten time from order to delivery</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>PM3</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Supplier rating</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>PM4</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Product descriptions</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM1</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Product related knowledge</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM2</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Knowledge organisation based on domain standards</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM3</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Knowledge governance processes</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM4</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Enterprise description and knowledge management</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM5</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Integrated application execution</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM6</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Stakeholder involvement</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM7</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Negotiation space based on models</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM8</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Integration and federation of objectives</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM9</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Link viewpoints for decision-making</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>KM10</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Identities are hard-coded</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>IM1</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>De-coupled layers</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>SM1</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Customisation of software products</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>SM2</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Auto descriptive applications</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>SM3</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Internal information model</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>SM4</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Documented publication of applications and services</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>SM5</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Data format interoperability</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>DM1</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Distributed inconsistent data</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>DM2</p>
+</td>
+</tr>
+<tr>
+<td class="ms-prof-left" style="border-left: 1.0pt solid black; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>Support for middleware framework</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>&nbsp;</p>
+</td><td class="ms-prof-even" style="border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid black; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0cm; padding-bottom: 0cm">
+<p>DM3</p>
+</td>
+</tr>
+</table>
+<a name="N10492"></a><a name="Business+management"></a>
+<h3 class="underlined_5">Business management</h3>
+<ul>
+<li>
+<strong>BM1:</strong> Business Processes "hard-coded" in applications. Improvement of application deployment in terms of business internal "time to market" and high programming code reuse level.</li>
+<li>
+<strong>BM2:</strong> Repetitive manual business processes for regular bulk orders. Much of the manufactured products are generic and this involves repeated periodic processing of similar or identical orders.</li>
+<li>
+<strong>BM3:</strong> Link decision-making activities with strategic plans, development and operational results. Business decision-making activities are of paramount importance to enterprises, affecting the day-to-day operations as well as medium and long-term planning and execution of activities. Therefore, an integral mechanism is required to support the decision-making process at various levels with strategic plans, by considering product/project development activities and results coming out of daily operations.</li>
+<li>
+<strong>BM4:</strong> Provision of (near) real-time aggregated views of key business information. Related to the above business decision-making activities, these aggregated views could be provided as services to the roles and actors required, accessing and integrating data in existing legacy systems. Such aggregated views will enable actors to take more accurate and timely decisions, exploiting to the full extend the capabilities of existing ICT systems.</li>
+<li>
+<strong>BM5:</strong> Target setting decomposition and objectives mapping to process roles. Among the major challenges large enterprises are facing today is the capability to translate strategic goals into detailed tactical and operational objectives and targets for every business unit and major business process. The timely execution of and the ability to re-adjust and fine-tune this activity upon fluctuations of market conditions can have a significant impact on the profitability and, in some occurrences, on the survival of these enterprises within the extremely competitive environment they operate. Therefore, there is a need to develop a mechanism to structure and facilitate that process of business strategy translation into business process objectives, attributable to the different roles of its key personnel.</li>
+<li>
+<strong>BM6:</strong> Objectives inferring to tangible benefits and expectations. One step further to the above issue, the detailed tactical and operational objectives per role have to be justified by the benefits and expectations one can bring back into each role, and all together into the business process/unit, thus justifying the budget and other resources to be allocated for its realisation. Therefore, there is a need to develop a similar to the above mechanism to inference role objectives into attainable benefits and expectations.</li>
+<li>
+<strong>BM7:</strong> Link program, product and enterprise viewpoint to support effective decision-making, strategic plans, development and operational results. Several viewpoints are structuring management of activities within an enterprise and a networked organisation. Each person has consequently different antagonist objectives, with sometimes unclear definition of priority. Linking program, product and enterprise viewpoints should allow more effective decision making, negotiation and activities within the collaborative product design within a networked organisation. It should also allow a better alignment between decision making, strategic plans, development and operational results.</li>
+</ul>
+<a name="N104B3"></a><a name="Process+management"></a>
+<h3 class="underlined_5">Process management</h3>
+<ul>
+<li>
+<strong>PM1:</strong> Applications focus on transactions, not on processes. Usage of graphical tools to manage process parameterisations and process management in a virtual enterprise context, gaining programming activities reduction/reset (code implementation).</li>
+<li>
+<strong>PM2:</strong> Process interoperability. Ability of a process or application to make "visible" the requested services/interfaces and the offered services/interfaces.</li>
+<li>
+<strong>PM3:</strong> Lag. Time from product order to delivery could be shorter. Shortening time from ordering to receiving raw materials from the supplier has a direct effect on the delivery date of the finished product.</li>
+<li>
+<strong>PM4:</strong> Time spent rating supplier. Many companies conduct tri-monthly reviews of their suppliers to ensure that standards are kept.</li>
+</ul>
+<a name="N104C8"></a><a name="Knowledge+management"></a>
+<h3 class="underlined_5">Knowledge management</h3>
+<ul>
+<li>
+<strong>KM1:</strong> Confusion resulting from poor product descriptions. Clients very often order the wrong products!</li>
+<li>
+<strong>KM2:</strong> Product related knowledge sharing within and between product life cycle phases. Adequate and common understanding of product and process information is required to support knowledge sharing between different product life-cycle phases, rather than merely transferring information between them.</li>
+<li>
+<strong>KM3:</strong> Domain standards based knowledge organisation. The knowledge meta-meta model should allow integration of concerned industrial sector meta-models, ICT used solutions meta-models and Enterprise Modelling used solutions meta-models.</li>
+<li>
+<strong>KM4:</strong> Establishment of Knowledge governance process, standards and best practices for a networked organization without governance and long term strategy, islandisation of knowledge applications will lead to non-interoperability.</li>
+<li>
+<strong>KM5:</strong> Enterprise description and knowledge management in various aspects and dimensions (organisation, role, decision, process, product, system) knowledge capture, assimilation and management are some of the most important assets of an enterprise, an asset that creates significant added value to any existing information and communication infrastructure.</li>
+<li>
+<strong>KM6:</strong> Ability of integrated applications execution via custom, adaptive and model generated environment. Legacy applications integration and interoperability: existing applications that provide access to enterprise data and facilitate analysis and decision-making should be integrated using a standard technology that allows composition at service level, thus providing the reusability and flexibility of customized services composition and deployment. Model driven generation of interoperable custom and role-based workplaces: Models mapping and integration at system level, as well as tools for the transformation of the provided models to interoperable service description interfaces would allow the interoperability of system models and model generated workplaces.</li>
+<li>
+<strong>KM7:</strong> Support for stakeholders' involvement and collaboration:<ul>
+<li>Communication / collaboration infrastructure integration: use of standard middleware and communication protocols would allow the seamless communication and interoperability of model-generated workplaces applications.</li>
+<li>Shared data integration: Reconciliation of business level information exchanged between the stakeholders that would allow their collaboration and common understanding is required. This probably implies business data integration at semantic or business meta-models level with the use of reference ontologies and/or mapped meta-models.</li>
+<li>Data and data access synchronization: Working concurrently on the same data requires a synchronization mechanism that preserves their consistency and validity and distributes their valid state to the interested stakeholders.</li>
+</ul>
+</li>
+<li>
+<strong>KM8:</strong> Negotiation space based on objectives models used by the enterprises of the networked organisation. Enterprise Modelling tools are used to support elaboration of enterprise objectives and roles, supporting quality trends (ISO 9001, CMM, CMMI, etc), but level of maturity of enterprises for usage of such tools or quality approach is not the same. To benefits from modelling and models, but also to help the less mature enterprises to integrate such tools, some neutral standards are necessary in order to prepare negotiation workspace between the actors of Collaborative Product Design actors in a networked organization.</li>
+<li>
+<strong>KM9:</strong> Integration and federation of Objectives to tangible benefits and expectations used models. Different and heterogeneous tools (Activity Based Costing, System Engineering, Scorecard, etc.) are used to link objectives to tangible benefits in one hand, to the expectation and requirement in the other hand, often within the same enterprise. A negotiation and decision workspace should support quick and easy federation or integration of these tools to efficiently support enterprise and program management and decision making.</li>
+<li>
+<strong>KM10:</strong> Link program, product and enterprise viewpoint to support effective decision-making, strategic plans, development and operational results. Several viewpoints are structuring management of activities within an enterprise and a networked organisation. Each person has consequently different antagonist objectives, with sometimes unclear definition of priority. Linking program, product and enterprise viewpoints should allow more effective decision making, negotiation and activities within the collaborative product design within a networked organisation. It should also allow a better alignment between decision making, strategic plans, development and operational results.</li>
+</ul>
+<a name="N104FC"></a><a name="Information+management"></a>
+<h3 class="underlined_5">Information management</h3>
+<ul>
+<li>
+<strong>IM1:</strong> Identity and identification schemes are hard-coded. This makes cooperation and collaboration process modelling and execution very difficult. Inbound and outbound logistics have to be designed from knowledge structures, and services provided to decode and align logistics schemes.</li>
+</ul>
+<a name="N10505"></a><a name="Software+management"></a>
+<h3 class="underlined_5">Software management</h3>
+<ul>
+<li>
+<strong>SM1:</strong> De-coupled application layer and technical layer. In order to support agility of global information system, and independence between business logic and technical solutions implementing the awaited functionality. It should allow interchange-ability of software product components and real governance of the information system by enterprise and networked organisation.</li>
+<li>
+<strong>SM2:</strong> Easy customisation of the software product and automatic reorganization of the technical interfaces. As enterprises are more and more using Commercial of the Shelves, the used solutions are highly generic and require an important parameterisation/customisation and administration to adapt the solution to the business context. This customisation should be as easy as possible by operators, without implying modification of technical interfaces by software engineers.</li>
+<li>
+<strong>SM3:</strong> Auto descriptive applications. Capability from the software product solution to extract the business logic as business or enterprise model, with a standard and open format, in order to support custom, adaptive and model generated collaboration environment parameterisation.</li>
+<li>
+<strong>SM4:</strong> Internal information model of software products and applications based on standardised information models capacity for the networked organisation to rely on stable and software product independent business models to establish their collaboration, with minor impact of technical solutions evolution.</li>
+<li>
+<strong>SM5:</strong> Documented publication of applications and software products services. The idea is to allow easy usage of these applications when willing to establish collaboration, without used solution experts. It should be done through Application Programming Interfaces and service description according the numerous interface description standards (IDL, WSDL), for IT department and ICT integrators. It should be done through well structured and agile documentation that should be reusable by knowledge models. All these interfaces should be coherent and easily reflect customisation, an automated way.</li>
+</ul>
+<a name="N1051E"></a><a name="Data+management"></a>
+<h3 class="underlined_5">Data management</h3>
+<ul>
+<li>
+<strong>DM1:</strong> Data Format Interoperability: ability of a process/application to exchange data with one/more partners by means of a common data format or via a mapping between the proprietary format and an intermediate common format.</li>
+<li>
+<strong>DM2:</strong> Distributed inconsistent data: ability of a solution to guarantee data consistency and distributed data alignment in a virtual enterprise context.</li>
+<li>
+<strong>DM3:</strong> Support of the main technical middleware framework a coherent way. It includes STEP ISO information technical platform, CORBA and OMA, eBusiness infrastructure (Web services), Wfmc standards, J2EE and .NET. It aims to be able to easily collaborate with partners that have made some choices based on these technical platforms a seamless way.</li>
+</ul>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

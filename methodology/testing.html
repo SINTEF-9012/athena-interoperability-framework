@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Testing methodology</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Interoperability methodology</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../methodology/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/baseline_methodology.html" title="Baseline interoperability methodology">Baseline interoperability methodology</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/bif.html" title="Business interoperability framework (BIF)">Business interoperability framework (BIF)</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/eimm.html" title="Enterprise interoperability maturity model (EIMM)">Enterprise interoperability maturity model (EIMM)</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/analysis.html" title="Interoperability analysis">Interoperability analysis</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/mapping.html" title="Requirements - solution mapping">Requirements - solution mapping</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Testing methodology</div>
+</div>
+<div class="menuitem">
+<a href="../methodology/implementation.html" title="Implementation">Implementation</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/iiam.html" title="Interoperability impact analysis method (IIAM)">Interoperability impact analysis method (IIAM)</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="testing.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Testing methodology</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Goals">Goals</a>
+</li>
+<li>
+<a href="#Description">Description</a>
+</li>
+<li>
+<a href="#Activities">Activities</a>
+</li>
+</ul>
+</div>
+<a name="N10013"></a><a name="Goals"></a>
+<h2 class="underlined_10">Goals</h2>
+<div class="section">
+<p class="MsoBodyText">The objective of this Test Framework is to support conformance and interoperability testing. It describes a test architecture and its software components, how these can be combined to create a test configuration for various types of testing. It also describes the test material to be processed by this architecture, a mark-up language and format for representing test requirements, Test Cases and messages exchanged. The main purpose of the Methodology &amp; Technology Testing Report is to provide a methodology and an IT architecture in order to validate, by means of the piloting activities, the research results coming from the AL A projects.</p>
+</div>
+<a name="N1001A"></a><a name="Description"></a>
+<h2 class="underlined_10">Description</h2>
+<div class="section">
+<p class="MsoBodyText">The Test Framework is composed by the following elements:</p>
+<ol>
+<li>
+<p class="MsoBodyText">Test Components</p>
+<ul>
+<li>
+<p class="MsoBodyText">
+<strong>Test Driver</strong>: The Test Driver is the component that drives the execution of each step of a Test Case. Depending on the test type, the Test Driver may drive the Test Case by interacting with other components. Therefore the primary function of the Test Driver is to parse and interpret the Test Case definitions that are part of a Test Suite, as described in the Test Framework mark-up language.</p>
+</li>
+<li>
+<p class="MsoBodyText">
+<strong>Test Service</strong>: it is the component that implements some test operations (actions) triggered by received messages. These actions support and automate the execution of Test Cases.</p>
+</li>
+</ul>
+</li>
+<li>
+<p class="MsoBodyText">Test Suite Documentation</p>
+<ul>
+<li>
+<p class="MsoBodyText">The Test Suite documentation is a collection of several OASIS IIC XML Schemas, with some added attributes required for the ATHENA test platform, containing configuration data, documentation and executable Test Cases description (XML).</p>
+</li>
+<li>
+<p class="MsoBodyText">&nbsp;<strong>Test Suite Metadata</strong> provides documentation used by the Test Driver to generate a Test Report for all executed Test Cases.</p>
+</li>
+</ul>
+</li>
+<li>
+<p class="MsoBodyText">Test Platform</p>
+<ul>
+<li>
+<p class="MsoBodyText">From a high level description we can consider the composition of two macro blocks. The first one is the component under test (system, application or service that is being tested). The second block is included in the ATHENA Conformance/Interoperability testing platform that is the component from which the test execution is conducted.</p>
+</li>
+<li>
+<p class="MsoBodyText">It is easy to recognize that the ATHENA Conformance/Interoperability testing platform plays the role of Test Driver previously described while the System under test the one of the Test Service.</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<a name="N10050"></a><a name="Activities"></a>
+<h2 class="underlined_10">Activities</h2>
+<div class="section">
+<p class="MsoBodyText">With the Test Framework described above it is possible to perform the Conformance and Interoperability Test. The Test Framework is intended for the following modes of operation, whether testing for conformance or for interoperability. In order for a testing process (or validation process) to conform to this specification, the following phases need to be implemented:</p>
+<ul>
+<li>
+<p class="MsoBodyText">Test Requirements Design: a list of Test Requirements established for the tested specification.</p>
+</li>
+<li>
+<p class="MsoBodyText">Test Procedure Design: in the previous methodology the formalised procedures described a sequence of steps that the operator had to perform during the test execution. In this case the sequence of operations to be performed is embedded in an XML document</p>
+</li>
+<li>
+<p class="MsoBodyText">Validation Conditions: Validation criteria have to be defined for the profile or level being tested, and expressed as a general condition over the Test Report document.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

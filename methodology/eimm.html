@@ -1,0 +1,464 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Enterprise interoperability maturity model (EIMM)</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Interoperability methodology</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../methodology/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/baseline_methodology.html" title="Baseline interoperability methodology">Baseline interoperability methodology</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/bif.html" title="Business interoperability framework (BIF)">Business interoperability framework (BIF)</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Enterprise interoperability maturity model (EIMM)</div>
+</div>
+<div class="menuitem">
+<a href="../methodology/analysis.html" title="Interoperability analysis">Interoperability analysis</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/mapping.html" title="Requirements - solution mapping">Requirements - solution mapping</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/testing.html" title="Testing methodology">Testing methodology</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/implementation.html" title="Implementation">Implementation</a>
+</div>
+<div class="menuitem">
+<a href="../methodology/iiam.html" title="Interoperability impact analysis method (IIAM)">Interoperability impact analysis method (IIAM)</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="eimm.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Enterprise interoperability maturity model (EIMM)</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Solution+-+EIMM+assessment">Solution - EIMM assessment</a>
+<ul class="minitoc">
+<li>
+<a href="#Solution+modelling+concept+derivation">Solution modelling concept derivation</a>
+</li>
+<li>
+<a href="#Modelling+levels+mapped+to+the+AIF">Modelling levels mapped to the AIF</a>
+</li>
+<li>
+<a href="#Quality+criteria+for+enterprise+modelling+regarding+interoperability">Quality criteria for enterprise modelling regarding interoperability</a>
+</li>
+<li>
+<a href="#Mapping">Mapping</a>
+</li>
+<li>
+<a href="#Application+guide">Application guide</a>
+<ul class="minitoc">
+<li>
+<a href="#Application+guide+for+EIMM">Application guide for EIMM</a>
+</li>
+<li>
+<a href="#Application+for+the+mapping">Application for the mapping</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Resources">Resources</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Introduction"></a>
+<h2 class="underlined_10">Introduction</h2>
+<div class="section">
+<p>To figure out deficits and gaps during operation leads to a serious risk related to the current business. ATHENA elaborated a maturity model and an application procedure to perform assessments for interoperability maturity.</p>
+<p>The EIMM-based methodology step shall provide assistance in capturing the collaborative processes of the company with the support of one of several adequate modelling approaches. And further it shall support the selection of an adequate methodology into an enterprise model and establish this model in the company. Figure 38 gives a review on the whole framework [ATHENA A1 2005c]. In the following two subchapters the EIMM and the Deducing approach will be explained in more detail.</p>
+<p>
+<img alt="" src="eimm_files/maturity_framework.png"></p>
+</div>
+<a name="N1001C"></a><a name="Solution+-+EIMM+assessment"></a>
+<h2 class="underlined_10">Solution - EIMM assessment</h2>
+<div class="section">
+<p>The following six Areas of Concern are captured in the assessment:</p>
+<ol>
+<li>
+<strong>Business Strategy and Processes.</strong> This Area of Concern covers the identification, specification, execution, improvement and alignment of business strategy and processes. For the purpose of interoperability, this includes and pursues the improvement of collaborative processes, for several units within the organization as well as for external entities.</li>
+<li>
+<strong>Organisation and Competences.</strong> This Area of Concern covers the identification, specification, enactment and improvement of the organizational structure, including the knowledge and skills of the identified players. For the purpose of interoperability, this includes the identification of external entities to collaborate with, the specification of the topology of a networked organization, and its deployment and improvement.</li>
+<li>
+<strong>Products and Services.</strong> This Area of Concern covers the identification, specification and design of the organisation&rsquo;s products and services, its quality characteristics and the life-cycle strategy. For the purpose of interoperability, this includes the identification of new opportunities and specification of the same aspects for new products and services that make use of networked technologies for its delivery: e-Products and e-Services.</li>
+<li>
+<strong>Systems and Technology.</strong> This Area of Concern covers the identification, specification, design, construction/acquisition, operation, maintenance and improvement of enterprise systems. This includes the establishment of links and traceability to enterprise models, at best self-controlled. For the purpose of interoperability, this includes research and evolution of enterprise systems to apply innovative technologies that foster interoperability.</li>
+<li>
+<strong>Legal Environment, Security and Trust.</strong> This Area of Concern covers the identification of legal, security and trust requirements due to the collaboration with external entities, and the provision of solutions to manage these aspects which are a key for interoperability.</li>
+<li>
+<strong>Enterprise Modelling.</strong> All of the previously identified Areas of Concern are directly affected by aspects of an all embracing sixth Area of Concern. This Area of Concern covers the specification, construction, application and improvement of the enterprise models. This includes support activities such as the identification of appropriate meta-models and languages, methodologies, infrastructure, organization (people and skills), etc. for enterprise modelling. Additionally, it deals with the interoperability of enterprise models.</li>
+</ol>
+<p>
+<img alt="" src="eimm_files/eimm.png"></p>
+<p>Using a five level maturity scale, the following maturity levels can be identified:</p>
+<ol>
+<li>
+<strong>Performed:</strong> Enterprise modelling and collaboration is done, but in an ad-hoc and chaotic manner. The organization collaborates with external entities (suppliers, administration, customers), but the relationships are not planned thoughtfully. Collaborative tasks and processes usually exceed budget and schedule, their past success (usually based on the people) cannot be repeated, and the potential of the technology is not used properly.</li>
+<li>
+<strong>Modelled:</strong> Enterprise modelling and collaboration is done in a similar way each time, the technique has been found applicable. Defined meta-models and approaches are applied, responsibilities are defined, people understand the enterprise model and know how to execute it, and network technologies are used to collaborate.</li>
+<li>
+<strong>Integrated:</strong> The enterprise modelling process has been formally documented, communicated and is consistently in use. The organisation uses a defined methodology and infrastructure for enterprise modelling, the different dimensions are integrated among themselves and the model is traceable to the enterprise systems, there is a knowledge base used to improve the models, and business collaboration is facilitated through interoperability technologies, use of standards, and externalisation of part of the enterprise models.</li>
+<li>
+<strong>Interoperable:</strong> Enterprise models support dynamic interoperability and adaptation to changes and evolution of external entities. The workplaces of the people are seamlessly adapted to the enterprise model. Results (for organizations and persons involved) and process metrics are defined as a basis for continuous improvement.</li>
+<li>
+<strong>Optimising:</strong> Enterprise models allow the organisation to react and adapt to changes in the business environment in an agile, flexible and responsive manner. Enterprise systems are systematically traced to enterprise models and innovative technologies are continuously researched and applied to improve interoperability. The use of enterprise modelling can contribute to reach the overall goals of the organization, unit, or persons involved.</li>
+</ol>
+<p>The EIMM defined as a set of Areas of Concern and a set of maturity levels provides the means to determine the current ability of an enterprise to collaborate with external entities and to specify the path to improve this ability. It provides an organisational context for more specific and technical improvements. As a third dimension, the EIMM takes into account the targeted organisational units for which a maturity level needs to be assessed, or which need to be improved, in order to achieve a certain maturity level.</p>
+<p>
+<img alt="" src="eimm_files/eimm2.png"></p>
+<p>Each Area of Concern will be defined by a set of goals and objectives related to interoperability and collaboration issues. The level of interoperability and collaboration maturity for each Area of Concern will be defined by the presence or absence of maturity indicators. These are typical practices and work-documents, which have to be in place to achieve a determined maturity level. The specific goals and objectives of each Area of Concern, together with their indicators are described in the next section. In order to achieve a certain maturity level, each of the indicators needs to fulfil the threshold values or states that are specified for the respective maturity level. At the same time they illustrate the To-Be status that has to be realized if a company wants to reach the next maturity level.</p>
+<a name="N1005E"></a><a name="Solution+modelling+concept+derivation"></a>
+<h3 class="underlined_5">Solution modelling concept derivation</h3>
+<p>The impact and the benefit of the above described criteria to Interoperability requirements can be shown, if they were mapped to the different levels of the AIF. This mapping of the criteria to the AIF gives the assessment structure and the related procedure a new tool to differentiate and to weight the interoperability requirements for Enterprise Models. In the next three subchapters the Interoperability levels and the quality criteria and the mapping with the EIMM levels will be introduced.</p>
+<a name="N10064"></a><a name="Modelling+levels+mapped+to+the+AIF"></a>
+<h3 class="underlined_5">Modelling levels mapped to the AIF</h3>
+<p>The ATHENA Interoperability Reference Architecture as described in Figure 9 is now mapped with modelling levels in terms of formalisation. This is one key aspect in order to find the right modelling concept. This implies the following mapping items (see figure below):</p>
+<ul>
+<li>Technical Process Analyst Perspective: Collaborations on this level are characterized by the attempt of the partners to align their process with each other. The detailed business logic and the requirements for IT &ndash; Support to enable interoperability between business partners can be assessed in this level.</li>
+<li>In the third level the Implementation Perspective allows the invocation of existing services automatically. Collaboration can now take place on IT system level by using certain interaction protocols.</li>
+<li>The lowest level of granularity in performing design time modelling is represented by the Data Perspective were data formats and semantics are clarified in order to allow collaboration support with approved data and formats.</li>
+<li>The lowest level in terms of interoperability run-time perspective is represented by the Execution Data Perspective, were values of properties are consistent and comparable.</li>
+</ul>
+<p>
+<img alt="" src="eimm_files/interoperability_levels.png"></p>
+<a name="N10077"></a><a name="Quality+criteria+for+enterprise+modelling+regarding+interoperability"></a>
+<h3 class="underlined_5">Quality criteria for enterprise modelling regarding interoperability</h3>
+<p>Quality Criteria for Enterprise Modelling regarding interoperability are derived from &ldquo;Principles of methodical modelling&rdquo; [Becker, et al. 1995, ISO 1998] and concepts and rules for Enterprise Models [Jochem 2001]. These basic criteria are extended and adapted regarding interoperability:</p>
+<ul>
+<li>Correctness: An Enterprise Model is correct, if real world elements are correctly represented in the model. It means syntactically (complete and consistent related to the Meta-Model) and semantically (structural, hierarchical and behavioural constancy related to the elements of the real world) correct.</li>
+<li>Scope and Purpose orientation: An Enterprise Model is scope and purpose oriented, if it represents only these parts of the real world which are intended by the goals, the scope and the purpose of the modeller.</li>
+<li>Efficiency: An Enterprise Model is efficient, if the creation effort is low, but the benefit regarding the intended goals, scope and purpose is high. It is also efficient when the usage duration of the model is long and itself or parts of it are reusable for other goals, scopes and purposes.</li>
+<li>Conformity: An Enterprise Model is conform, if it fulfils specific modelling language requirements, follows specific (design) rules, fulfils/covers standards, covers specific boundary conditions.</li>
+<li>Clearness: An Enterprise Model is &ldquo;clear&rdquo;, if on one side a common well known terminology based on an application-oriented ontology is used and on the other side it is readable based on a structured layout. This criterion depends on the model user and also on the modelling method/language which is used.</li>
+<li>Comparability: An Enterprise Model is comparable, if it fits into a common framework, uses defined levels of abstraction and a granularity based on defined scope, goals and purpose. Comparability is influenced by the use of common patterns, the grade of formalisation and the correct usage of modelling method/language.</li>
+<li>Systematic Structure: An Enterprise Model has a systematic structure, if it fits into a common framework, uses common pattern, was build with consistent, systematic applied design rules and supports the concepts of views to integrate models developed from different views.</li>
+<li>Life-Cycle Support: An Enterprise Model supports the Enterprise Life-Cycle, if it allows feeding model information forward and backward in life-cycle activities and represents recursion and iteration mechanisms. Different life-cycle phases may have different models. It enables value-added iteration of enterprise processes that improves product quality.</li>
+</ul>
+<a name="N1008E"></a><a name="Mapping"></a>
+<h3 class="underlined_5">Mapping</h3>
+<p>In. the mapping between the introduced parameters is shown: Scoping Business Modelling (which are the leading parameters), Modelling parameters, required minimum EIMM Assessment result and importance of the Modelling Quality parameters.</p>
+<p>
+<img alt="" src="eimm_files/integration_matrix.png"></p>
+<p>The AIF Reference Architecture levels are represented as Level of Formalisation from Business Analyst perspective to Execution Data perspective. Based on the &ldquo;Business Scope&rdquo; the right modelling parameters can be derived in order to define an appropriate model (see mark &ldquo;X&rdquo; to each level). As well the required EIMM level is indicated in the same metric. In the case that an EIMM level is not achieved for a distinct modelling task, activities for the improvement of interoperability capabilities can be identified by a simple analysis of the current maturity profile. The quality parameter which represents the outcome of the modelling task has a different behaviour. The requirements level of each parameter is increasing from left to right. So for instance becomes the &ldquo;Clearness&rdquo; in the Execution Data Perspective the mark important whilst in the other levels it is essential.</p>
+<a name="N1009A"></a><a name="Application+guide"></a>
+<h3 class="underlined_5">Application guide</h3>
+<p>In the following two subchapters the application for applying the EIMM and to perform the deducing approach will be figured out.</p>
+<a name="N100A0"></a><a name="Application+guide+for+EIMM"></a>
+<h4>Application guide for EIMM</h4>
+<p>In the following the steps for performing the assessment are figured out.</p>
+<p>
+<strong>First:</strong> The situation of the company has to be clarified:</p>
+<ul>
+<li>Assessment is important for the reputation to the business community &ndash; here an independent assessor from outside is necessary. For an outside person the major specific keys for the business and the situation of the company has to be identified and if necessary the impact for interoperability has to be clarified</li>
+<li>Internal assessment for improving the capability or deducing mainly the right modelling approach &ndash; the evaluation of the assessment should be done by an independent person inside the company</li>
+</ul>
+<p>
+<strong>Second:</strong> A self assessment of each unit which is responsible for a certain item has to be performed. Here both a member of the management and a staff member have to fulfil the questionnaire independently. Especially for function oriented organisations (Sales, production planning, Production etc.) a distribution in bigger companies is recommended. In smaller companies the ORG/IT Department should be able to fulfil the questionnaire. In the following a reference proposal should help to distribute.</p>
+<ul>
+<li>Product /Service Development</li>
+<li>Production Planning</li>
+<li>Production</li>
+<li>Sales</li>
+<li>Purchasing</li>
+<li>HR</li>
+<li>Org/IT</li>
+<li>CEO level</li>
+</ul>
+<p>The responsible organisational unit is normally marked with &ldquo;x&rdquo;. There are some alternatives for distributing. In this case an &ldquo;a&rdquo; means that the ticked organisational unit can answer as an alternative. Sometimes if one organisational unit is not able to have the respected knowledge (e.g. Org/IT) more than one organisational units should in parallel &ldquo;mandatory&rdquo; answer. This is marked with &ldquo;m&rdquo; (see example in the table below).</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+<thead>
+<tr style="page-break-inside: avoid; height: 2.85pt">
+<td style="width: 29.85pt; height: 2.85pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: 1.5pt solid windowtext; border-bottom: medium none; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">Nr.</p>
+</td><td style="width: 205.55pt; height: 2.85pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.5pt solid windowtext; border-bottom: medium none; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Question name</p>
+</td><td colspan="8" style="width: 191.35pt; height: 2.85pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: 1.5pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="255">
+<p class="MsoNormal">Organisational Unit</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 79.2pt">
+<td style="width: 29.85pt; height: 79.2pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 205.55pt; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">Product/ Service Development</p>
+</td><td style="width: 1.0cm; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">Production Planning</p>
+</td><td style="width: 1.0cm; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">Production Engineering</p>
+</td><td style="width: 21.25pt; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">Sales</p>
+</td><td style="width: 21.3pt; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">Purchasing</p>
+</td><td style="width: 21.25pt; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">HR</p>
+</td><td style="width: 21.25pt; height: 79.2pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">ORG/IT</p>
+</td><td style="width: 21.25pt; height: 79.2pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">CEO level</p>
+</td>
+</tr>
+</thead>
+<tr style="height: 15.35pt">
+<td style="width: 29.85pt; height: 15.35pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">EM1</p>
+</td><td style="width: 205.55pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Bill of Material</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">x</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.3pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">a</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 15.35pt">
+<td style="width: 29.85pt; height: 15.35pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">EM2</p>
+</td><td style="width: 205.55pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Product variants</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">x</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.3pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">a</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 15.35pt">
+<td style="width: 29.85pt; height: 15.35pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">EM3</p>
+</td><td style="width: 205.55pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Structure</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">x</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.3pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">a</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 15.35pt">
+<td style="width: 29.85pt; height: 15.35pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">EM4</p>
+</td><td style="width: 205.55pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Service Processes</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.3pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">x</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 15.35pt">
+<td style="width: 29.85pt; height: 15.35pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">EM5</p>
+</td><td style="width: 205.55pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Others</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.3pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">x</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 15.35pt">
+<td style="width: 29.85pt; height: 15.35pt; border-left: 1.5pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="40">
+<p class="MsoNormal">EM6</p>
+</td><td style="width: 205.55pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="274">
+<p class="MsoNormal">Strategic processes (like governance)</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 1.0cm; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="38">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.3pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">x</p>
+</td><td style="width: 21.25pt; height: 15.35pt; border-left: medium none; border-right: 1.5pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 1.5pt; padding-right: 1.5pt; padding-top: 0cm; padding-bottom: 0cm" width="28">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+</table>
+<p>
+<strong>Third:</strong> After the self assessment the independent person should analyse the fulfilled questionnaires in order to identify discrepancies. During the external audit these discrepancies as well between management and staff have to be moderated and verified by using operational data or reference documents. Depending on the size of the company more than one auditor may have to assess.</p>
+<p>
+<strong>Fourth:</strong> The independent person has to perform the entire calculation and to organise a final evaluation meeting at least with the management in order to clarify the rating and to give recommendations for the entire company.</p>
+<a name="N10297"></a><a name="Application+for+the+mapping"></a>
+<h4>Application for the mapping</h4>
+<p>Based on the Scope elaborated by using the Business Interoperability Framework and the current maturity Level of Interoperability the to-Be and the As-Is columns can be derived. The level of formalization is the channel for all other modelling concept aspects like completeness, granularity and quality. These aspects will guide the modelling as well the derivation of interoperability requirements.</p>
+<p>
+<img alt="" src="eimm_files/application_integration_matrix.png"></p>
+<p>In the next subchapter the modelling concept will be used to perform interoperability analysis by annotating requirements based on enterprise models.</p>
+</div>
+<a name="N102A3"></a><a name="Resources"></a>
+<h2 class="underlined_10">Resources</h2>
+<div class="section">
+<ul>
+<li>Documentation: <a href="http://athena.troux.com/Team/Repository/Projects/Project_216/Upload/FileSharing/Del_2nd6Ms/050314_Athena_DA141_V10.pdf">Deliverable D.A1.4.1 - Framework for the Establishment and Management Methodology</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Information interoperability</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Technical architecture</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../technical/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../technical/em_technical.html" title="Collaborative enterprise modelling">Collaborative enterprise modelling</a>
+</div>
+<div class="menuitem">
+<a href="../technical/cbp_technical.html" title="Cross-organisational business processes">Cross-organisational business processes</a>
+</div>
+<div class="menuitem">
+<a href="../technical/services_technical.html" title="Flexible execution and composition of services">Flexible execution and composition of services</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Information interoperability</div>
+</div>
+<div class="menuitem">
+<a href="../technical/semantics_technical.html" title="Semantics and ontologies">Semantics and ontologies</a>
+</div>
+<div class="menuitem">
+<a href="../technical/mdi_technical.html" title="Model-driven interoperability">Model-driven interoperability</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="information_technical.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Information interoperability</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Design-time+architecture+for+business+documents">Design-time architecture for business documents</a>
+</li>
+<li>
+<a href="#Business+document+and+mapping+tools">Business document and mapping tools</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Introduction"></a>
+<h2 class="underlined_10">Introduction</h2>
+<div class="section">
+<p>In this section we describe the overall architecture of the ATHENA approach to the handling of business documents and protocols in the context of modeling and execution of cross-organizational business processes, which extends the semantics and ontologies approach to information interoperability.</p>
+<p>We consider a business document as information entities that are exchanged between and referred to by business partners during the enactment of business processes. Depending on the stakeholder that models a business document; different representation for the business object can be defined:</p>
+<ul>
+<li>on the business level stakeholders will typically talk about business documents in the form of business relevant documents, e.g., a purchase order</li>
+<li>on the execution level stakeholders will agree on XML messages that are exchanged and whose payload contains the business documents</li>
+</ul>
+<p>The following figure illustrates on a very high level the main building blocks of the overall architecture.</p>
+<p>
+<img alt="" src="information_technical_files/business_documents_protocols.png"></p>
+</div>
+<a name="N10023"></a><a name="Design-time+architecture+for+business+documents"></a>
+<h2 class="underlined_10">Design-time architecture for business documents</h2>
+<div class="section">
+<p>This section describes the elements of the design time architecture for business documents.</p>
+<p>
+<img alt="" src="information_technical_files/design_time_architecture.png"></p>
+<p>Modeling of business documents is closely linked to the modeling of the cross-organizational business processes defining the interaction between business partners. Thus, we also have to consider the different modeling levels as they are contained in the business process modeling framework. At business level the content of the business document is determined. The requirements are formulated from a business perspective and form the general structure of the business document. Through an assembly-based approach, components are utilized to construct concrete business documents from smaller components or singular items. The detailed instantiation of these items (e.g., &ldquo;title&rdquo;) by assignment of further attributes (e.g., to provide semantics in form of a reference to an ontology) or by the restriction of the assigned data types is part of the technical level of business documents. The specification of the business document in a certain schema (e.g., UBL or OAGIS) in a certain syntax (e.g., XML or UN/EDIFACT) wrapped in business messages constitutes the execution level of the business document specification.</p>
+</div>
+<a name="N1002F"></a><a name="Business+document+and+mapping+tools"></a>
+<h2 class="underlined_10">Business document and mapping tools</h2>
+<div class="section">
+<p>The approach is supported by a number of tools that complement the tools business process modeling and execution that have been developed in ATHENA. The figure below gives an overview of the different solutions and highlights their relationships.</p>
+<p>
+<img alt="" src="information_technical_files/cbp_tools.png"></p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

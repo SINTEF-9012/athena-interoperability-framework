@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Technical architecture</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Technical architecture</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menupage">
+<div class="menupagetitle">Introduction</div>
+</div>
+<div class="menuitem">
+<a href="../technical/em_technical.html" title="Collaborative enterprise modelling">Collaborative enterprise modelling</a>
+</div>
+<div class="menuitem">
+<a href="../technical/cbp_technical.html" title="Cross-organisational business processes">Cross-organisational business processes</a>
+</div>
+<div class="menuitem">
+<a href="../technical/services_technical.html" title="Flexible execution and composition of services">Flexible execution and composition of services</a>
+</div>
+<div class="menuitem">
+<a href="../technical/information_technical.html" title="Information interoperability">Information interoperability</a>
+</div>
+<div class="menuitem">
+<a href="../technical/semantics_technical.html" title="Semantics and ontologies">Semantics and ontologies</a>
+</div>
+<div class="menuitem">
+<a href="../technical/mdi_technical.html" title="Model-driven interoperability">Model-driven interoperability</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="index.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Technical architecture</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Service-oriented+archictecture">Service-oriented archictecture</a>
+</li>
+<li>
+<a href="#Technical+architecture+of+the+ATHENA+platform">Technical architecture of the ATHENA platform</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Service-oriented+archictecture"></a>
+<h2 class="underlined_10">Service-oriented archictecture</h2>
+<div class="section">
+<p>The technical architecture proposed by ATHENA follows the principles of a service-oriented architecture (SOA). SOA refers to the latest trend in system architectures where typically Web services and technologies play an important part in achieving interoperability.</p>
+<p>Service-oriented development emerged as an evolution of the component-based development and among its goals is to support the loose coupling of system parts in a far better way than existing component-based technologies.<br>
+<br>The OASIS reference model for SOA [OASIS] defines SOA as:</p>
+<p>&nbsp;&nbsp;&nbsp; <em>&ldquo;Service-oriented architecture (SOA) is a paradigm for organising and utilising distributed capabilities that may be under the control of different ownership domains.&rdquo;</em>
+</p>
+<p>According to this definition SOA differs in organising and understanding information communication technology (ICT) related to previous approaches:</p>
+<ul>
+<li>First, SOA reflects the reality that ownership boundaries are a motivating consideration in the architecture and design of systems.</li>
+<li>Second, SOA applies the lessons learned from commerce to the organisation of ICT assets to facilitate the matching of capabilities and needs.</li>
+</ul>
+<p>The value of SOA is that it provides a simple scalable paradigm for organising large networks of systems that require interoperability. The ramifications of service-oriented development can be observed both at the system and the business level. Having systems composed of services offered by various service providers provides the basis for supporting new business models, such as &ldquo;virtual organisations&rdquo;. Services can be seen as business capabilities that support the enterprise. From the ICT perspective, a service is an ICT representation of business functionality that is implemented via multiple messages that return state and/or change state of an associated entity.</p>
+<p>SOA also allows us to integrate more adaptive and dynamic architectures such as enterprise knowledge architectures, business process management suites, agent architectures and peer-to-peer (P2P) architectures. SOA aims to promote software development in a way that leverages the construction of dynamic systems which can easily adapt to volatile environments and be easily maintained as well. The decoupling of system constituent parts enables the re-configuration of system components according to the end-user&rsquo;s needs and the system&rsquo;s environment. Furthermore, the use of widely accepted standards and protocols that are based on XML and operate above internet standards (HTTP, SMTP, etc) enhances interoperability.</p>
+</div>
+<a name="N1002A"></a><a name="Technical+architecture+of+the+ATHENA+platform"></a>
+<h2 class="underlined_10">Technical architecture of the ATHENA platform</h2>
+<div class="section">
+<p>A SOA platform provides all the necessary services to develop new software capabilities and integrate existing enterprise applications and systems. There is a trend towards SOA platform consolidation which includes data and information integration services, service communication and application integration services, business process and composite application services, and interaction and workplace services. In addition, modelling capabilities are being included as part of modern SOA platforms.</p>
+<p>The ATHENA platform is illustrated in the figure below according to the ATHENA interoperability reference architecture. It shows some of the main functionality offered by software tools and infrastructure components developed (or offered by partners) in ATHENA.</p>
+<p>
+<img alt="" src="index_files/platform_functionality.png"></p>
+<p>The figure below gives a high-level description of one possible implementation of the technical architecture using and configuring technical solutions components developed in ATHENA.</p>
+<p>
+<img alt="" src="index_files/platform_configuration.png"></p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+<div id="logos"></div>
+</div>
+</body>
+</html>

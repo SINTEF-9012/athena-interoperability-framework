@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Semantics and ontologies - Application guidelines</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Guidelines and best practices</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../guidelines/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/em_guidelines.html" title="Collaborative enterprise modelling">Collaborative enterprise modelling</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/cbp_guidelines.html" title="Cross-organisational business processes">Cross-organisational business processes</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/services_guidelines.html" title="Flexible execution and composition of services">Flexible execution and composition of services</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/information_guidelines.html" title="Information interoperability">Information interoperability</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Semantics and ontologies</div>
+</div>
+<div class="menuitem">
+<a href="../guidelines/mdi_guidelines.html" title="Model-driven interoperability">Model-driven interoperability</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="semantics_guidelines.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Semantics and ontologies - Application guidelines</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Preparation+phase">Preparation phase</a>
+<ul class="minitoc">
+<li>
+<a href="#Task+1.1%3A+Scenario+analysis">Task 1.1: Scenario analysis</a>
+</li>
+<li>
+<a href="#Task+1.2%3A+Document+analysis">Task 1.2: Document analysis</a>
+<ul class="minitoc">
+<li>
+<a href="#Task+1.2.1%3A+Document+schema+identification">Task 1.2.1: Document schema identification</a>
+</li>
+<li>
+<a href="#Task+1.2.2%3A+Document+instances+identification">Task 1.2.2: Document instances identification</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Task+1.3%3A+Ontology+concepts+identification">Task 1.3: Ontology concepts identification</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Design+phase">Design phase</a>
+<ul class="minitoc">
+<li>
+<a href="#Task+2.1%3A+Ontology+building">Task 2.1: Ontology building</a>
+<ul class="minitoc">
+<li>
+<a href="#Task+2.1.1%3A+Glossary+definition">Task 2.1.1: Glossary definition</a>
+</li>
+<li>
+<a href="#Task+2.1.2%3A+First+enrichment">Task 2.1.2: First enrichment</a>
+</li>
+<li>
+<a href="#Task+2.1.3%3A+Ontology+finalization">Task 2.1.3: Ontology finalization</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Task+2.2%3A+Schema+uploading">Task 2.2: Schema uploading</a>
+</li>
+<li>
+<a href="#Task+2.3%3A+Semantic+Annotation">Task 2.3: Semantic Annotation</a>
+<ul class="minitoc">
+<li>
+<a href="#Task+2.3.1%3A+Terminological+annotation">Task 2.3.1: Terminological annotation</a>
+</li>
+<li>
+<a href="#Task+2.3.2%3A+Path+annotation">Task 2.3.2: Path annotation</a>
+</li>
+<li>
+<a href="#Task+2.3.3%3A+Simple+annotation">Task 2.3.3: Simple annotation</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Task+2.4%3A+Semantic+transformation+rules+building">Task 2.4: Semantic transformation rules building</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Run-time+phase+and+testing">Run-time phase and testing</a>
+<ul class="minitoc">
+<li>
+<a href="#Task+3.1%3A+Configuration+of+the+reconciliation+engine">Task 3.1: Configuration of the reconciliation engine</a>
+</li>
+<li>
+<a href="#Task+3.2%3A+Testing">Task 3.2: Testing</a>
+</li>
+<li>
+<a href="#Task+3.3%3A+Document+reconciliation">Task 3.3: Document reconciliation</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Integration+phase">Integration phase</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Introduction"></a>
+<h2 class="underlined_10">Introduction</h2>
+<div class="section">
+<p>This section collects guidelines and procedures that can help users to deploy and use the A3 solutions for the semantic reconciliation in a real scenario. Three main phases are described below:</p>
+<ul>
+<li>
+<strong>Preparation phase:</strong> Analysis of the business scenario and preparation of the necessary material for the deployment.</li>
+<li>
+<strong>Design phase:</strong> After the creation of the reference Ontology, using the A3 tools each partner design its own environment, generating semantic annotations and semantic reconciliation rules.</li>
+<li>
+<strong>Run-time phase:</strong> The actual reconciliation of documents is performed and tested.</li>
+<li>
+<strong>Integration phase:</strong> The run-time reconciliation services provided by A3 are integrated into legacy systems.</li>
+</ul>
+<p>
+<img alt="" src="semantics_guidelines_files/a3_application_guidelines.png"></p>
+</div>
+<a name="N1002B"></a><a name="Preparation+phase"></a>
+<h2 class="underlined_10">Preparation phase</h2>
+<div class="section">
+<p>This phase should be performed, mainly, by functional analysts and domain experts in order to prepare the field to the specialist who will design and deploy the scenario.</p>
+<a name="N10031"></a><a name="Task+1.1%3A+Scenario+analysis"></a>
+<h3 class="underlined_5">Task 1.1: Scenario analysis</h3>
+<p>This phase should include a first analysis of the functional requirements which can help the technical analyst to figure out all the correct artefacts that should be deployed in the environment. Besides, the identification of all the details related to the business scenario and an agreement on a common understanding, at business level, shared by all the partners involved in the semantic integration allows a better identification of the main concepts for the development of the Reference Ontology.</p>
+<a name="N10037"></a><a name="Task+1.2%3A+Document+analysis"></a>
+<h3 class="underlined_5">Task 1.2: Document analysis</h3>
+<a name="N1003B"></a><a name="Task+1.2.1%3A+Document+schema+identification"></a>
+<h4>Task 1.2.1: Document schema identification</h4>
+<p>The first technical task is to collect the schemas of the documents that should be exchanged and reconciliated at runtime, in order to allow, in the design phase, the definition of the semantic annotation and rules on these schemas.</p>
+<a name="N10041"></a><a name="Task+1.2.2%3A+Document+instances+identification"></a>
+<h4>Task 1.2.2: Document instances identification</h4>
+<p>Since the actual reconciliation works on instances of the schema for which reconciliation rules have been previously defined, a set of such documents needs to be identified. These documents should be used also in the testing phase.</p>
+<a name="N10047"></a><a name="Task+1.3%3A+Ontology+concepts+identification"></a>
+<h3 class="underlined_5">Task 1.3: Ontology concepts identification</h3>
+<p>After the identification of the basic artefacts that will be used in the design and test phase, it is possible to perform a deep analysis of the concepts found in those resources in order to get a better understanding of the overall scenario we are dealing with. This analysis can help the identification of all the concepts needed in the ontology and can help the analysts to understand if they need to build a new ontology or how they can use an existing one.</p>
+</div>
+<a name="N1004D"></a><a name="Design+phase"></a>
+<h2 class="underlined_10">Design phase</h2>
+<div class="section">
+<p>All the tasks included in the design phase aim to design all the information needed for performing the runt-time phase.</p>
+<a name="N10053"></a><a name="Task+2.1%3A+Ontology+building"></a>
+<h3 class="underlined_5">Task 2.1: Ontology building</h3>
+<p>This task is accomplished using the Athos tool. Starting from the analysis performed before, the semantic specialists collect all the information and start to build the ontology, first with the definition of a glossary of common terms, then adding a first enrichment in order to get a taxonomy and at last finalizing the ontology including the relationships among concepts. Both, business analysts and semantic experts should cooperate during this phase in order to follow the functional aspects and maintain semantic consistency on the final ontology.</p>
+<p>This task should not be always needed because after a scenario is covered, similar cases can use the same ontology.</p>
+<a name="N1005B"></a><a name="Task+2.1.1%3A+Glossary+definition"></a>
+<h4>Task 2.1.1: Glossary definition</h4>
+<p>This is the first step towards a stepwise construction of an ontology. At this stage, only the terminological level is addressed. Structuring of concepts, as well as relationships among them are not considered. The definition of a glossary requires first the identification of the relevant terms in the domain, gathered in a lexicon; then the latter is progressively enriched with definitions, yielding the glossary.</p>
+<a name="N10061"></a><a name="Task+2.1.2%3A+First+enrichment"></a>
+<h4>Task 2.1.2: First enrichment</h4>
+<p>A glossary is a powerful tool, since it establishes definitions of terms. But since such definitions are expressed in natural language, a glossary is more suitable for human being than automatic reasoning. For this reason, the second step in the construction of an ontology is the definition of taxonomies, usually specialization and decomposition. Taxonomies are a useful way of linking concepts, since they identify hierarchies among concepts.</p>
+<a name="N10067"></a><a name="Task+2.1.3%3A+Ontology+finalization"></a>
+<h4>Task 2.1.3: Ontology finalization</h4>
+<p>The real ontology needs the identification and establishment of other semantic relationships, such as attributes, relatedness, in order to build a complete semantic net as an ontology is.</p>
+<a name="N1006D"></a><a name="Task+2.2%3A+Schema+uploading"></a>
+<h3 class="underlined_5">Task 2.2: Schema uploading</h3>
+<p>The annotations and the semantic rules are strictly related and performed on RDF schemas of the business document that should be exchanged at run-time. For this reason both A* (for annotations) and Argos (for the reconciliation rules) share common RDF schemas using Themis. The Themis repository is also used as common reference for all the tools of the A3 framework and it provides functionalities for adding relations between document schemas and services used for exchanging message instances based on those schemas.</p>
+<p>The analysts should upload RDF schemas of the business documents retrieved in the preparation phase. Often, in existing scenarios, the documents are defined as XML schemas which should be translated into RDFS using semi-automatic translators or following the rules of the RDFS syntax. The tool itself lets the users to upload only valid schemas in order to ensure quality check even during the design phase.</p>
+<a name="N10075"></a><a name="Task+2.3%3A+Semantic+Annotation"></a>
+<h3 class="underlined_5">Task 2.3: Semantic Annotation</h3>
+<p>This task aims to enrich the knowledge on the business resources (in our case mainly RDF schemas of the business documents) allowing the creation of relations between the ontology concepts and the business elements. The Semantic Annotation is accomplished by the A* tool. The methodology behind the tool identifies 4 increasing levels of annotation: terminological, path, simple and full. At least the third level of annotation should be reached for reconciliation purposes. Like the task for the creation of the ontology, also this phase should involve both domain experts and semantic specialists, in order to bridge the gap between the business scenario and the semantic needs.</p>
+<a name="N1007B"></a><a name="Task+2.3.1%3A+Terminological+annotation"></a>
+<h4>Task 2.3.1: Terminological annotation</h4>
+<p>It consists on a keyword-based annotation. Terms appearing in the schema that is being annotated are simply associated with a set of terms from the ontology.</p>
+<a name="N10081"></a><a name="Task+2.3.2%3A+Path+annotation"></a>
+<h4>Task 2.3.2: Path annotation</h4>
+<p>At this level, also the structure of the schemas and the ontology are taken into consideration. Complete paths, from the root element to the leaves, on the annotated schemas are associated with a set of paths from the ontology.</p>
+<a name="N10087"></a><a name="Task+2.3.3%3A+Simple+annotation"></a>
+<h4>Task 2.3.3: Simple annotation</h4>
+<p>Using the simple annotation, it is possible to specify the type of mismatch that each annotation intends to cover. Such an information will be used also during the development of the semantic reconciliation rules (in the next task).</p>
+<a name="N1008D"></a><a name="Task+2.4%3A+Semantic+transformation+rules+building"></a>
+<h3 class="underlined_5">Task 2.4: Semantic transformation rules building</h3>
+<p>During the run-time phase the Ares reconciliation engine use semantic rules defined again document schemas to apply the reconciliation on the related document instances. These reconciliation rules are written by semantic specialists starting from the annotations made with A* and using the web interface provided by Argos. The advantage is that the users do not have to write rules for each direct transformation from a document schema to another but only from their own schemas to the ontology format. In particular, for each schema a set of rules needs to be built for incoming messages (Backward rules) and another set of rules for outgoing messages (Forward rules). In this context each partner has to care just about its own part&nbsp; and can easily plug its infrastructure into existing semantic-enabled environments.</p>
+<p>Argos uses the syntax of the Jena library for specifying the rules in order to use the Jena reconciliation engine. Using that syntax the user can cover many kinds of transformations. The possibility to use also Java methods for applying specific actions gives an idea of the wide range of opportunities given to the users. Of course the usage of that syntax is not so user-friendly, so Argos provides a web interface to design the rules starting from a set of pre-existing rule templates which cover all the most common transformations:</p>
+<ul>
+<li>
+<em>Map:</em> to map a concept of the source model into a concept of the target model</li>
+<li>
+<em>Map Table:</em> to map the values of a concept having an enumeration type into the values of another enumerated concept in the target model</li>
+<li>
+<em>Convert:</em> to convert a concept of the source model to a concept of the target model by using a conversion parameter</li>
+<li>
+<em>Sum:</em> to sum 2 or more concepts of the source model to a concept of the target model</li>
+<li>
+<em>Mult:</em> to multiply 2 or more concepts of the source model to a concept of the target model</li>
+<li>
+<em>Split:</em> to split a concept of the source model to 2 or more&nbsp; concepts of the target model</li>
+<li>
+<em>Merge:</em> to merge 2 or more concepts of the source model into a concept of the target model</li>
+</ul>
+</div>
+<a name="N100B2"></a><a name="Run-time+phase+and+testing"></a>
+<h2 class="underlined_10">Run-time phase and testing</h2>
+<div class="section">
+<p>This include a first configuration phase, followed by the testing phase applied in order to check the consistency of rules provided in the design stage and at the end the reconciliation of real documents.</p>
+<a name="N100B8"></a><a name="Task+3.1%3A+Configuration+of+the+reconciliation+engine"></a>
+<h3 class="underlined_5">Task 3.1: Configuration of the reconciliation engine</h3>
+<p>A first configuration of Ares is needed in order to set up all the necessary parameters for finalizing the integration with the other tools of the framework. In particular, each installation of Ares has to be linked to a single ontology in order to define the context in which the tool is working on and it has also to know the address of the service provided by Themis, for retrieving schemas information, and Argos, for retrieving the reconciliation rule sets.</p>
+<a name="N100BE"></a><a name="Task+3.2%3A+Testing"></a>
+<h3 class="underlined_5">Task 3.2: Testing</h3>
+<p>A first testing phase is needed in order to check the actual reliability of the details provided during the design phase. In particular the reconciliation rules have to be tested on real document instances. Ares provides a web interface which allows the users to test directly particular sets of rules on RDF instances.</p>
+<a name="N100C4"></a><a name="Task+3.3%3A+Document+reconciliation"></a>
+<h3 class="underlined_5">Task 3.3: Document reconciliation</h3>
+<p>If the testing phase produces reliable results it is possible to start the real reconciliation between systems using the services provided by Ares. This step is completely automatic and performed by the Ares reconciliation engine with the support of the other tools of the semantic suite. It provides a set of services that take as input the document instance to be reconciled written in RDF format and the endpoint URLs of the services from and to which the message is sent. Automatically, the tool retrieves, using Themis as reference, the related sets of reconciliation rules from Argos and applies the transformation giving as output a new RDF instance which follows the final format.</p>
+</div>
+<a name="N100CA"></a><a name="Integration+phase"></a>
+<h2 class="underlined_10">Integration phase</h2>
+<div class="section">
+<p>The entire semantic reconciliation process can include also this phase which should provide a deep integration of the semantic framework with pre-existing infrastructures. Ares is the only run-time interface of the semantic framework with other systems and it is based on Web services standards. It provides also Java API for who looks for more performance and a more coupled integration. All these aspects should help the integration but sometime could not be enough. In particular for quick deployments it is necessary to support common message exchange standards. For this reason ATHENA is providing the reconciliation service integrated in a component for the message management called Semantic Gateway.</p>
+<p>The Semantic Gateway uses Johnson as message gateway which ensures the possibility to use, easily, common standards such as the WS-Addressing or the WS-ReliableMessaging in order to deploy straightforwardly the reconciliation service into infrastructure that use those standards. This configuration allows also to manage different aspects related to the message management and to develop advanced functionalities and different business scenarios.</p>
+<p>
+<img alt="" src="semantics_guidelines_files/semantic_gateway.png"></p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

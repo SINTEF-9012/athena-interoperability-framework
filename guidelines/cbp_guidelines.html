@@ -1,0 +1,722 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Cross-organisational business processes - Application guidelines and design rules</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Guidelines and best practices</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../guidelines/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/em_guidelines.html" title="Collaborative enterprise modelling">Collaborative enterprise modelling</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Cross-organisational business processes</div>
+</div>
+<div class="menuitem">
+<a href="../guidelines/services_guidelines.html" title="Flexible execution and composition of services">Flexible execution and composition of services</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/information_guidelines.html" title="Information interoperability">Information interoperability</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/semantics_guidelines.html" title="Semantics and ontologies">Semantics and ontologies</a>
+</div>
+<div class="menuitem">
+<a href="../guidelines/mdi_guidelines.html" title="Model-driven interoperability">Model-driven interoperability</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="cbp_guidelines.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Cross-organisational business processes - Application guidelines and design rules</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Design+rules">Design rules</a>
+<ul class="minitoc">
+<li>
+<a href="#Proposals+for+design+rules+for+enterprise+cooperation%3A">Proposals for design rules for enterprise cooperation:</a>
+</li>
+<li>
+<a href="#Proposals+for+design+of+an+enterprise+participating+in+a+cooperation%3A">Proposals for design of an enterprise participating in a cooperation:</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Application+procedure">Application procedure</a>
+<ul class="minitoc">
+<li>
+<a href="#Purposes">Purposes</a>
+</li>
+<li>
+<a href="#Overall+Procedure">Overall Procedure</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Guidelines+and+relevant+issues">Guidelines and relevant issues</a>
+<ul class="minitoc">
+<li>
+<a href="#Project+initialisation+%26+specification">Project initialisation &amp; specification</a>
+</li>
+<li>
+<a href="#Modelling+and+configuration">Modelling and configuration</a>
+<ul class="minitoc">
+<li>
+<a href="#Step+2.1%3A+CBP+modelling">Step 2.1: CBP modelling</a>
+</li>
+<li>
+<a href="#Steps+2.2+%E2%80%93+2.7">Steps 2.2 &ndash; 2.7</a>
+</li>
+<li>
+<a href="#Step+2.2%3A+View+processes+identification+%E2%80%93+Integrated+engine">Step 2.2: View processes identification &ndash; Integrated engine</a>
+</li>
+<li>
+<a href="#Step+2.3%3A+Configure+integrated+engine">Step 2.3: Configure integrated engine</a>
+</li>
+<li>
+<a href="#Step+2.4%3A+View+processes+identification+%E2%80%93+Direct+application+integration">Step 2.4: View processes identification &ndash; Direct application integration</a>
+</li>
+<li>
+<a href="#Step+2.5%3A+Application+interfaces+development">Step 2.5: Application interfaces development</a>
+</li>
+<li>
+<a href="#Step+2.6%3A+View+processes+identification+%E2%80%93+Private+engine">Step 2.6: View processes identification &ndash; Private engine</a>
+</li>
+<li>
+<a href="#Step+2.7%3A+Configure+private+engine">Step 2.7: Configure private engine</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Prototype+%26+testing">Prototype &amp; testing</a>
+<ul class="minitoc">
+<li>
+<a href="#Step+3.1%3A+Test+cases+definition">Step 3.1: Test cases definition</a>
+</li>
+<li>
+<a href="#Step+3.2%3A+Test+integrated+engine">Step 3.2: Test integrated engine</a>
+</li>
+<li>
+<a href="#Step+3.3%3A+Test+application+interfaces">Step 3.3: Test application interfaces</a>
+</li>
+<li>
+<a href="#Step+3.4%3A+Test+private+engine+integration">Step 3.4: Test private engine integration</a>
+</li>
+<li>
+<a href="#Step+3.5%3A+Test+CBP+monitoring">Step 3.5: Test CBP monitoring</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Activation">Activation</a>
+</li>
+<li>
+<a href="#Maintenance+%26+change+management">Maintenance &amp; change management</a>
+<ul class="minitoc">
+<li>
+<a href="#Step+5.1%3A+Maintain+integrated+engine">Step 5.1: Maintain integrated engine</a>
+</li>
+<li>
+<a href="#Step+5.2%3A+Maintain+application+interfaces">Step 5.2: Maintain application interfaces</a>
+</li>
+<li>
+<a href="#Step+5.3%3A+Maintain+private+engine">Step 5.3: Maintain private engine</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Introduction"></a>
+<h2 class="underlined_10">Introduction</h2>
+<div class="section">
+<p>In this chapter we first describe some general design rules that should help users to implement the architecture alternatives described in the last chapter. Furthermore, an application procedure and a CBP implementation procedure guiding the user through the necessary steps for implementing the architecture are given.</p>
+</div>
+<a name="N10016"></a><a name="Design+rules"></a>
+<h2 class="underlined_10">Design rules</h2>
+<div class="section">
+<p>The design rules described in this chapter are general rules/proposals for the design of the &ldquo;system&rdquo; cooperation across organisations. They are not a procedure to follow during the design.</p>
+<a name="N1001C"></a><a name="Proposals+for+design+rules+for+enterprise+cooperation%3A"></a>
+<h3 class="underlined_5">Proposals for design rules for enterprise cooperation:</h3>
+<ol>
+<li>The enterprise cooperation shall have a model of the CBPs covering the workflow and the object exchange.</li>
+<li>All communications between partners shall be defined within the CBP model and not hard coded in the interface components.</li>
+<li>Information required for the cooperation shall not be fixed in programming code and might be configurable by a modelling approach.</li>
+<li>The owner of a document shall be traceable.</li>
+</ol>
+<a name="N10029"></a><a name="Proposals+for+design+of+an+enterprise+participating+in+a+cooperation%3A"></a>
+<h3 class="underlined_5">Proposals for design of an enterprise participating in a cooperation:</h3>
+<ol>
+<li>Enterprises shall have a model of their view processes covering external interfaces and transformations to the internal processes.</li>
+<li>Enterprises shall be able to manage local processes in a way which will allow them to coordinate data exchange with other members of the cooperation.</li>
+<li>Enterprises shall be able to provide monitoring information in coherence with the CBP model.</li>
+</ol>
+</div>
+<a name="N10034"></a><a name="Application+procedure"></a>
+<h2 class="underlined_10">Application procedure</h2>
+<div class="section">
+<a name="N10038"></a><a name="Purposes"></a>
+<h3 class="underlined_5">Purposes</h3>
+<p>The purpose of this chapter is to outline the procedural steps that an organization should undertake in order to implement the CBP enactment architecture in its business environment. The objective is to highlight the relevant issues concerning the architecture implementation, and to provide guidelines on how to solve each issue using available tools and methodologies, either from ATHENA or from the state of the art.</p>
+<p>The procedure is described abstractly, i.e., without referring to specific business scenarios and individual organization requirements. Developing detailed implementation guidelines for specific business cases is out of the scope of the present Deliverable, and will be addressed by Project A4, where implementation requirements from the pilot cases are matched with the general architecture developed in this work package.</p>
+<a name="N10040"></a><a name="Overall+Procedure"></a>
+<h3 class="underlined_5">Overall Procedure</h3>
+<p>The general implementation procedure for the CBP enactment architecture is outlined in the following Figure. The procedure consists of the following main phases:</p>
+<ol>
+<li>
+<strong>Project initialisation &amp; specification.</strong> This phase deals with general aspects common to most IT projects, such as strategy and requirements formulation, investment planning, activities planning, benefits estimation and performances monitoring.</li>
+<li>
+<strong>Modelling and Configuration.</strong> This phase corresponds to the &ldquo;design time&rdquo; activities required for setting up the CBP enactment architecture. Most of these activities deal with CBP modelling and the related supporting tools. Different approaches are needed for each of the three architecture models: Integrated Engine for CBPs and Private Processes, Direct Application Integration and Private Engine.</li>
+<li>
+<strong>Prototype &amp; Testing.</strong> This phase consists of setting-up prototype cases for testing the enactment architecture. Testing considers aspects dependent on the architecture model (of the three proposed) as well as common aspects, such as CBP monitoring.</li>
+<li>
+<strong>Activation Phase.</strong> This phase includes all the necessary activities to make the system available to the organization for regular usage, e.g., deployment, users training and support, roll-out across the organization.</li>
+<li>
+<strong>Maintenance &amp; Change Management.</strong> In the maintenance phase a procedure must be established to manage system failures or change requests. These have to be handled differently depending on which of the three architecture models has been implemented.</li>
+<li>
+<strong>Dismissal &amp; Replacement.</strong> This phase consists of dismissing the system at the end of its life-cycle, after an adequate alternative technology has been found to replace it. Given the level of innovation of the proposed architecture on industrial state-of-the-art, it is difficult at this stage to imagine a replacement scenario. Hence this phase will not be discussed.</li>
+</ol>
+<p>
+<img alt="" src="cbp_guidelines_files/application_procedure.png"></p>
+<p>Figure: Enactment architecture application procedure</p>
+</div>
+<a name="N10065"></a><a name="Guidelines+and+relevant+issues"></a>
+<h2 class="underlined_10">Guidelines and relevant issues</h2>
+<div class="section">
+<p>In the following we provide guidelines for each of the phases identified above, indicating the main steps to undertake and the relevant issues and approaches to consider.</p>
+<p>Our attention focuses solely on relevant issues from the Enactment Architecture point of view. We are aware that enabling CBPs poses important questions in other fields, e.g., about how to establish collaborative business relationships and about the content and scope of the CBPs themselves. Hence the information provided here will have to be complemented by the results of other ATHENA projects like A1 (especially A1.4), in order to develop a comprehensive CBP approach.</p>
+<a name="N1006D"></a><a name="Project+initialisation+%26+specification"></a>
+<h3 class="underlined_5">Project initialisation &amp; specification</h3>
+<p>The main architecture-related issues in this Phase are:</p>
+<ul>
+<li>Definition of an implementation plan that takes into account the various responsibilities and obligations of the different partners involved in the CBP.</li>
+<li>Definition of a deployment strategy, with clear identification of the physical architecture to be implemented (e.g., centralized, peer-to-peer, hybrid).</li>
+<li>Definition of a joint policy plan, taking into account such aspects as:<ul>
+<li>Service level standards;</li>
+<li>Contingency planning and management;</li>
+<li>Quality aspects;</li>
+<li>Security aspects.</li>
+</ul>
+</li>
+<li>Definition of standards to be adopted at process level and at document/event level.</li>
+<li>Business plan, including performance measurements, for the CBP initiative.</li>
+</ul>
+<p>Support for the solution of these issues can be provided by:</p>
+<ul>
+<li>Methodological guidelines for multi-enterprise architectures implementation.</li>
+<li>CBP-oriented reference standards like, e.g., CPFR and RosettaNet or other identified in work package A2.1, including contract templates and guidelines for establishing collaborative platforms.<br> Enterprise modelling might be an adequate instrument to support here issues such as: how IT solutions fit into the daily business or work. Starting from that enterprise modelling can be extended and used in the next phases (Modelling and Configuration).</li>
+</ul>
+<a name="N10090"></a><a name="Modelling+and+configuration"></a>
+<h3 class="underlined_5">Modelling and configuration</h3>
+<a name="N10094"></a><a name="Step+2.1%3A+CBP+modelling"></a>
+<h4>Step 2.1: CBP modelling</h4>
+<p>This step consists of the definition and sharing of the Cross-organization Business Process Models, following the approach defined in the work package A2.2 and documented by Deliverable DA2.2. The mentioned Deliverable provides comprehensive guidelines and tools for these activities.</p>
+<a name="N1009A"></a><a name="Steps+2.2+%E2%80%93+2.7"></a>
+<h4>Steps 2.2 &ndash; 2.7</h4>
+<p>To design and configure the CBP enactment architecture appropriately we provide guidelines on how to design the architecture, according to different scenarios that may be found at each partner site. In particular, rules are defined to identify which of the three architectures described in Chapter 5 is the most suitable one. Furthermore, the specific role that each component will play has to be determined.</p>
+<p>The decisional process can be summarised with the following schema:</p>
+<p>
+<img alt="" src="cbp_guidelines_files/decisional_process.png"></p>
+<p>Figure: Decisional process</p>
+<p>After having identified which of the three architectures will be targeted, guidelines will apply at different levels:</p>
+<ul>
+<li>modelling</li>
+<li>rules for internal components</li>
+<li>rules for interface components</li>
+<li>rules for CBP components</li>
+</ul>
+<p>In the following table we have reported for each type of component and for each type of architecture, what are the most relevant issues to be taken into account for every specific case.</p>
+<p>Moreover, according to the different situation, it may result that for each component:</p>
+<p>a) it is necessary to develop a component from scratch, using common guidelines<br>b) it is necessary to configure an existing tool/component according to common guidelines<br>c) it should not be taken into account because it is not relevant or not available</p>
+<p>According to such cases, we have painted the cells of the table with GREEN for cases a) (dark grey), with YELLOW for cases b) (light grey) or not painted for cases c).</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+<tr style="height: 21.0pt">
+<td colspan="2" style="width: 137.0pt; height: 21.0pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid black; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: silver" width="183">
+<p class="MsoNormal">
+<strong>Type of Architecture</strong>
+</p>
+</td><td style="width: 107.0pt; height: 21.0pt; border-left: medium none; border-right: medium none; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: silver" width="143">
+<p class="MsoNormal">
+<strong>A2 View Process Engine</strong>
+</p>
+</td><td style="width: 117.0pt; height: 21.0pt; border: 1.0pt solid windowtext; padding: 0cm; background: silver" width="156">
+<p class="MsoNormal">
+<strong>View Process Enactment Engine for Direct Application Integration</strong>
+</p>
+</td><td style="width: 117.0pt; height: 21.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: silver" width="156">
+<p class="MsoNormal">
+<strong>View Process Enactment Engine for Internal Engine Integration</strong>
+</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 40.5pt">
+<td rowspan="2" style="width: 62.0pt; height: 40.5pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid black; padding: 0cm" width="83">
+<p class="MsoNormal">
+<strong>Modelling</strong>
+</p>
+</td><td style="width: 75.0pt; height: 40.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>PP</strong>
+</p>
+</td><td rowspan="2" style="width: 107.0pt; height: 40.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid black; padding: 0cm; background: #99CC00" width="143">
+<p class="MsoNormal">Modelling of both Public Processes and process views can be done with ATHENA A2.2 methodology &amp; tools. Both PP and PV will be stored in the same repository.</p>
+</td><td style="width: 117.0pt; height: 40.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="156">
+<p class="MsoNormal">Not relevant since PP are embedded into internal applications</p>
+</td><td style="width: 117.0pt; height: 40.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="156">
+<p class="MsoNormal">PP already modelled "privately" by the partner: no assumption possible on technology/tools. Athena A2 approach not possible</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 32.25pt">
+<td style="width:75.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:32.25pt" width="100">
+<p class="MsoNormal">
+<strong>PV/CBP</strong>
+</p>
+</td><td style="width: 117.0pt; height: 32.25pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">PV are modelled from scratch, using ATHENA A2.2 methodology &amp; tools</p>
+</td><td style="width: 117.0pt; height: 32.25pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 42.0pt">
+<td rowspan="5" style="width: 62.0pt; height: 42.0pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid black; padding: 0cm" width="83">
+<p class="MsoNormal">
+<strong>Partner Private Components</strong>
+</p>
+</td><td style="width:75.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:42.0pt" width="100">
+<p class="MsoNormal">
+<strong>Private Process Modelling Tool</strong>
+</p>
+</td><td style="width: 107.0pt; height: 42.0pt; padding: 0cm; background: #99CC00" width="143">
+<p class="MsoNormal">ATHENA A2.2 tools approach</p>
+</td><td style="width:117.0pt;border-top:none;border-left: solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:42.0pt" width="156">
+<p class="MsoNormal">n/a</p>
+</td><td style="width:117.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:42.0pt" width="156">
+<p class="MsoNormal">Probably already existing with specific technology, for this reason not to be taken into account</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 42.75pt">
+<td style="width: 75.0pt; height: 42.75pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>Private Process Monitoring &amp; Analysis</strong>
+</p>
+</td><td style="width: 107.0pt; height: 42.75pt; border-left: medium none; border-right: medium none; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="143">
+<p class="MsoNormal">Process monitoring facilities offered by engine developed in A2</p>
+</td><td style="width: 117.0pt; height: 42.75pt; border: 1.0pt solid windowtext; padding: 0cm" width="156">
+<p class="MsoNormal">Not relevant</p>
+</td><td style="width: 117.0pt; height: 42.75pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="156">
+<p class="MsoNormal">Probably already existing with specific technology, for this reason not to be taken into account</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 39.75pt">
+<td style="width:75.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:39.75pt" width="100">
+<p class="MsoNormal">
+<strong>Private Processes Repository</strong>
+</p>
+</td><td style="width: 107.0pt; height: 39.75pt; padding: 0cm; background: #99CC00" width="143">
+<p class="MsoNormal">see "View Processes Repository"</p>
+</td><td style="width:117.0pt;border-top:none;border-left: solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:39.75pt" width="156">
+<p class="MsoNormal">n/a: private processes are embedded into internal applications</p>
+</td><td style="width:117.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:39.75pt" width="156">
+<p class="MsoNormal">Probably already existing with specific technology, for this reason not to be taken into account</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 153.0pt">
+<td style="width: 75.0pt; height: 153.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>Internal Engine</strong>
+</p>
+</td><td style="width: 107.0pt; height: 153.0pt; border-left: medium none; border-right: medium none; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="143">
+<p class="MsoNormal">n/a</p>
+</td><td style="width: 117.0pt; height: 153.0pt; border: 1.0pt solid windowtext; padding: 0cm" width="156">
+<p class="MsoNormal">n/a</p>
+</td><td style="width: 117.0pt; height: 153.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">An enactment engine running the company&rsquo;s private processes is already in place: it needs to be taken into account and analysed as it will need to be integrated with the Internal Application Gateway through the development of two connectors for SEND and RECEIVE. The two connectors will be provided according to a schema defined by ATHENA A2.4, and specifically implemented according to the different internal enactment engines</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 53.25pt">
+<td style="width:75.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:53.25pt" width="100">
+<p class="MsoNormal">
+<strong>Internal Applications</strong>
+</p>
+</td><td style="width: 107.0pt; height: 53.25pt; border-left: medium none; border-right: medium none; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="143">
+<p class="MsoNormal">Internal applications will be directly integrated into the A2 CBP Enactment Engine. It is necessary to identify API or Web services to be further integrated with Nehemiah</p>
+</td><td style="width: 117.0pt; height: 53.25pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="156">
+<p class="MsoNormal">Internal applications will be integrated with the Enactment Engine though API or Web Services. It is necessary to identify event-based interfaces.</p>
+</td><td style="width:117.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:53.25pt" width="156">
+<p class="MsoNormal">Internal applications are not accessible to the Interface Components, since they are handled by the private enactment engine</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 42.0pt">
+<td rowspan="6" style="width: 62.0pt; height: 42.0pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid black; padding: 0cm" width="83">
+<p class="MsoNormal">
+<strong>Interface Components</strong>
+</p>
+</td><td style="width:75.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:42.0pt" width="100">
+<p class="MsoNormal">
+<strong>View Processes Repository</strong>
+</p>
+</td><td style="width: 107.0pt; height: 42.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: medium none; padding: 0cm; background: #99CC00" width="143">
+<p class="MsoNormal">This repository will need to store both private and public views models and instances. ATHENA A2 approach can be used</p>
+</td><td style="width: 117.0pt; height: 42.0pt; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">Repository to be developed according to ATHENA A2 approach, containing VP models and instances</p>
+</td><td style="width: 117.0pt; height: 42.0pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: medium none; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">Repository to be developed according to ATHENA A2 approach, containing VP models and instances</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 205.5pt">
+<td style="width: 75.0pt; height: 205.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>Internal Application Gateway</strong>
+</p>
+</td><td style="width: 107.0pt; height: 205.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="143">
+<p class="MsoNormal">Direct integration of Internal Applications through "Core Engine" of Nehemiah</p>
+</td><td style="width: 117.0pt; height: 205.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="156">
+<p class="MsoNormal">The gateway must handle the enterprise applications APIs, and the standard Enactment Engine interface. It should include:<br> - Applications Integration Repository, which stores all the relevant information necessary to map enterprise applications interfaces with View Processes<br> - Enterprise Applications Interface. On event notification from the Enactment Engine, this interface calls the corresponding API of the involved enterprise application<br> - Enactment Engine Interface. Actions notified by internal applications, once translated into View Process events, are then passed on to the Enactment Engine for process advancement<br>
+<br>
+<br>
+</p>
+</td><td style="width: 117.0pt; height: 205.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">The gateway will communicate with the Send &amp; Receive connectors at partner's private side. It should offer:<br> - listener &amp; receiver (according to connectors technology, either implemented as socket or web server, RMI, SOAP, Corba)<br> - forward of business objects to the Enactment Engine<br>
+<br>
+</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 93.0pt">
+<td style="width:75.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:93.0pt" width="100">
+<p class="MsoNormal">
+<strong>Enactment Engine</strong>
+</p>
+</td><td style="width: 107.0pt; height: 93.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: medium none; padding: 0cm; background: #FFFF99" width="143">
+<p class="MsoNormal">Use of Nehemiah (ATHENA A2 CBP Enactment Engine)</p>
+</td><td style="width: 117.0pt; height: 93.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: medium none; padding: 0cm; background: #FFFF99" width="156">
+<p class="MsoNormal">The basic set of functionalities that the Enactment Engine should provide is:<br> - View processes instantiation<br> - View processes advancement<br> - Events dispatching via External Gateway<br> - Events dispatching via Internal Application Gateway<br>
+<br>
+<br>
+<br>
+</p>
+</td><td style="width: 117.0pt; height: 93.0pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: medium none; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">In this architecture, the enactment engine will not execute views, since they are already executed by the partner&rsquo;s private engine. So its main functionalities should be:<br> - receive business objects from the Internal Gateway<br> - Securely send them to the External Gateway<br>
+<br>
+</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 82.5pt">
+<td style="width: 75.0pt; height: 82.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>External Partner Gateway</strong>
+</p>
+</td><td style="width: 107.0pt; height: 82.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="143">
+<p class="MsoNormal">The External Partner Gateway is implemented by the "Coalition Engine" of Nehemiah, and communication will be implemented through web services.</p>
+</td><td style="width: 117.0pt; height: 82.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #FFFF99" width="156">
+<p class="MsoNormal">The basic set of functionalities that the External Partner Gateway should provide is:<br> - Messages dispatching to the other partners involved in the CBP<br> - Receiving messages from other partners involved in the CBP<br>
+<br>
+</p>
+</td><td style="width: 117.0pt; height: 82.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">The basic set of functionalities that the External Partner Gateway should provide is:<br> - Messages dispatching to the other partners involved in the CBP<br> - Receiving messages from other partners involved in the CBP<br>
+<br>
+</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 52.5pt">
+<td style="width: 75.0pt; height: 52.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>Event &amp; Document Correlation Generic Design</strong>
+</p>
+</td><td colspan="3" style="width: 341.0pt; height: 52.5pt; border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="455">
+<p class="MsoNormal">The Event and Document correlation component must be designed in order to support:<br> - "message to process instance mapping", which identifies the relevant process instance<br> - semantic document mapping which maps incoming messages into a format that the partner can understand. It also maps outgoing messages into a format the receiving partner can interpret appropriately.<br>
+<br>
+</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 93.75pt">
+<td style="width:75.0pt;border:none;border-right: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:93.75pt" width="100">
+<p class="MsoNormal">
+<strong>Event &amp; Document Correlation Specific Design</strong>
+</p>
+</td><td style="width: 107.0pt; height: 93.75pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="143">
+<p class="MsoNormal">In this architecture View Correlation IDs and Private Processes ID should be handled and mapped by the architecture</p>
+</td><td style="width: 117.0pt; height: 93.75pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">Correlation information must be associated to event types that trigger messages exchanged via the External Gateway.<br> Messages to/from external partners must contain Correlation ID. There is no mapping of ID to/from PP and VP<br>
+</p>
+</td><td style="width: 117.0pt; height: 93.75pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="156">
+<p class="MsoNormal">View Correlation IDs are mapped to PP Correlation ID and then passed to the internal private engine</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 31.5pt">
+<td rowspan="2" style="width: 62.0pt; height: 31.5pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid black; padding: 0cm" width="83">
+<p class="MsoNormal">
+<strong>CBP Components</strong>
+</p>
+</td><td style="width: 75.0pt; height: 31.5pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding: 0cm" width="100">
+<p class="MsoNormal">
+<strong>CBP Repository Models</strong>
+</p>
+</td><td colspan="3" rowspan="2" style="width: 341.0pt; height: 31.5pt; border-left: medium none; border-right: 1.0pt solid black; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding: 0cm; background: #99CC00" width="455">
+<p class="MsoNormal">A repository for both, storing the CBP definition and storing the execution data (process instances). The process definition is used for a CBP driven configuration of the engine. The information for the instance repository is derived from the execution of the view engine</p>
+</td>
+</tr>
+<tr style="page-break-inside: avoid; height: 32.25pt">
+<td style="width:75.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:32.25pt" width="100">
+<p class="MsoNormal">
+<strong>CBP Repository Instances</strong>
+</p>
+</td>
+</tr>
+</table>
+<a name="N1029E"></a><a name="Step+2.2%3A+View+processes+identification+%E2%80%93+Integrated+engine"></a>
+<h4>Step 2.2: View processes identification &ndash; Integrated engine</h4>
+<p class="MsoNormal">This step consists of identifying or defining the View Processes and linking them to the CBP, using an Integrated Engine which also handles the Private Processes.</p>
+<p class="MsoNormal">The main issues for this activity are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Support both inside-out (from the Private Process) and outside-in (from the CBP) definition of views.</p>
+</li>
+<li>
+<p class="MsoNormal">Support pattern-based recognition of View Processes to be exposed from the existing Private Processes. CBP patterns are discussed in Section Error! Reference source not found. and in the Working Document WD.A2.1.</p>
+</li>
+</ul>
+<a name="N102B1"></a><a name="Step+2.3%3A+Configure+integrated+engine"></a>
+<h4>Step 2.3: Configure integrated engine</h4>
+<p class="MsoNormal">This step consists of configuring the Integrated Engine so that it can run consistently both the internal processes and the related process views.</p>
+<p class="MsoNormal">The main issues for this activity are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Consistent mapping of states between internal processes and public views, and the related communications, following the approach introduced in Section Error! Reference source not found..</p>
+</li>
+<li>
+<p class="MsoNormal">Mapping of messages correlation IDs, following the approach presented in Section Error! Reference source not found.</p>
+</li>
+</ul>
+<a name="N102C4"></a><a name="Step+2.4%3A+View+processes+identification+%E2%80%93+Direct+application+integration"></a>
+<h4>Step 2.4: View processes identification &ndash; Direct application integration</h4>
+<p class="MsoNormal">This step consists of identifying or defining the View Processes and linking them to the CBP, using a View Engine which only handles View Processes.</p>
+<p class="MsoNormal">The main issues for this activity are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Map internal application functions that are not necessarily process-oriented, onto CBPs in order to derive the Views that have to be exposed.</p>
+</li>
+<li>
+<p class="MsoNormal">Map View IDs, provided by the external gateway, onto internal IDs handled by the applications.</p>
+</li>
+</ul>
+<p class="MsoNormal">Two kinds of support are basically needed:</p>
+<ul>
+<li>
+<p class="MsoNormal">Methodological support is required:</p>
+<ul>
+<li>
+<p class="MsoNormal">To map the applications functional view into a process-oriented view,</p>
+</li>
+<li>
+<p class="MsoNormal">To define process views at a proper granularity level which is sufficient for CBPs but can also be mapped to applications.</p>
+</li>
+</ul>
+</li>
+<li>
+<p class="MsoNormal">To handle physical communication, a high level interface should be available to expose the applications business logic and business documents. Existing state-of-the-art tools like those discussed in Section Error! Reference source not found. can provide support functionalities to facilitate the definition and maintenance of the Views/Application mapping.</p>
+</li>
+</ul>
+<a name="N102EC"></a><a name="Step+2.5%3A+Application+interfaces+development"></a>
+<h4>Step 2.5: Application interfaces development</h4>
+<p class="MsoNormal">In case of a direct link to Enterprise Application, the Internal Gateway cannot remove the need for these applications to provide a programmable interface that must be made compatible with the View Process concept.</p>
+<p class="MsoNormal">The main issues are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Providing an event-notification interface for all applications handling internal processes exposed as View Process, to inform the CBP about the progress of internal processes.</p>
+</li>
+<li>
+<p class="MsoNormal">Handling incoming messages for information provided by business partners via the External Gateway. This interface will also take care of ID correlation on the application side.</p>
+</li>
+</ul>
+<p class="MsoNormal">Such an interface can hardly be developed from scratch, and will rely on the APIs which are already present in most enterprise systems. Anyway, adaptations will be needed even for modern, web-service based interfaces, to meet the Internal Gateway requirements. Even in this case, usage of a state-of-the-art EAI platform would facilitate development and maintenance of the interfaces.</p>
+<a name="N10302"></a><a name="Step+2.6%3A+View+processes+identification+%E2%80%93+Private+engine"></a>
+<h4>Step 2.6: View processes identification &ndash; Private engine</h4>
+<p class="MsoNormal">Similarly to 2.5, this step consists of identifying or defining the View Processes and linking them to the CBP, using a View Engine which only handles View Processes. The difference is that these View Processes must be mapped onto Internal Processes handled by the Private Engine.</p>
+<p class="MsoNormal">The main issue here is to map processes already defined for different purposes (internal vs. external) and using different notations.</p>
+<p class="MsoNormal">In this case, the main support needed is represented by consistent and interoperable process-modelling standards, as have been identified in both the Projects A1 and A2.2.</p>
+<a name="N1030F"></a><a name="Step+2.7%3A+Configure+private+engine"></a>
+<h4>Step 2.7: Configure private engine</h4>
+<p class="MsoNormal">This step consists of configuring the Private Engine so that private processes and view processes can correctly communicate with each other.</p>
+<p class="MsoNormal">The main issues for this activity are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Consistent mapping of states between internal processes and public views.</p>
+</li>
+<li>
+<p class="MsoNormal">Mapping of messages correlation IDs, following the approach presented in Section Error! Reference source not found.</p>
+</li>
+</ul>
+<a name="N10322"></a><a name="Prototype+%26+testing"></a>
+<h3 class="underlined_5">Prototype &amp; testing</h3>
+<a name="N10326"></a><a name="Step+3.1%3A+Test+cases+definition"></a>
+<h4>Step 3.1: Test cases definition</h4>
+<p class="MsoNormal">Within this step a proper set of test cases is identified to support prototyping and testing of the CBPs being implemented. Test cases are defined according to the requirements of the specific organization and application sector.</p>
+<p class="MsoNormal">No specific issues have been identified from the enactment architecture point of view.</p>
+<a name="N10330"></a><a name="Step+3.2%3A+Test+integrated+engine"></a>
+<h4>Step 3.2: Test integrated engine</h4>
+<p class="MsoNormal">Specific issues related to testing the Integrated Engine architecture model are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Verify the consistency of the mapping and communication between View Processes and Internal Processes. This should be facilitated by the fact that both run on the same engine, and so it should be possible to verify them, e.g., through a unique simulation run.</p>
+</li>
+<li>
+<p class="MsoNormal">Verify correct messages correlation in both directions, from the Internal Process ID to the external partner View Process ID and vice-versa.</p>
+</li>
+</ul>
+<a name="N10340"></a><a name="Step+3.3%3A+Test+application+interfaces"></a>
+<h4>Step 3.3: Test application interfaces</h4>
+<p class="MsoNormal">Specific issues related to testing the Direct Application Integration architecture model are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Verify the correct communication between View Processes and the internal applications interfaces. This activity is critical and must be handled carefully, since it is not possible to circumscribe the test within one single system.</p>
+</li>
+</ul>
+<p class="MsoNormal">Indeed, a proper testing procedure will require cross-system test runs, that will have to be properly scheduled and monitored, taking the possible impact of external components into account (e.g., other application functions or the network infrastructure). For example, a problem caused by an application unexpectedly working on the same document ID can be very hard to detect.</p>
+<ul>
+<li>
+<p class="MsoNormal">Verify correct messages correlation in both directions, from the application-handled ID to the external partner View Process ID and vice-versa.</p>
+</li>
+</ul>
+<a name="N10354"></a><a name="Step+3.4%3A+Test+private+engine+integration"></a>
+<h4>Step 3.4: Test private engine integration</h4>
+<p class="MsoNormal">Specific issues related to testing the Direct Application Integration architecture model are:</p>
+<ul>
+<li>
+<p class="MsoNormal">Verify the correct communication between View Processes and the Internal Processes handled by the Private Engine. This activity should be facilitated by the fact that both environments offer monitoring functions to help problem identification. Anyway, coordinated tests should be run simultaneously on the two engines.</p>
+</li>
+<li>
+<p class="MsoNormal">Verify correct messages correlation in both directions, from the Private Process ID to the external partner View Process ID and vice-versa.</p>
+</li>
+</ul>
+<a name="N10364"></a><a name="Step+3.5%3A+Test+CBP+monitoring"></a>
+<h4>Step 3.5: Test CBP monitoring</h4>
+<p class="MsoNormal">No specific issues have been identified concerning how to test the CBP components of the architecture. The system should be tested with standard procedures, taking into account functionality aspects, i.e., fulfilment of the requirements, as well as technical aspects such as responsiveness and reliability.</p>
+<a name="N1036B"></a><a name="Activation"></a>
+<h3 class="underlined_5">Activation</h3>
+<p class="MsoNormal">The deployment of the architecture should follow the usual conventions applied by the involved organizations for their IT projects. Information support and training of users should take into account the following issues into account:</p>
+<ul>
+<li>
+<p class="MsoNormal">Final users, involved in the normal enterprise activities through their internal workflow engines or enterprise applications should not suffer dramatic changes of their way of working. If this is not the case, then the whole project should be reconsidered, since one of our inspiring principles is to make cross-organization integration as transparent as possible.</p>
+</li>
+<li>
+<p class="MsoNormal">Technical users, such as workflow system administrators, should be trained on the new system and on the various interfaces with their existing systems, according to the three implementation models.</p>
+</li>
+</ul>
+<a name="N1037B"></a><a name="Maintenance+%26+change+management"></a>
+<h3 class="underlined_5">Maintenance &amp; change management</h3>
+<a name="N1037F"></a><a name="Step+5.1%3A+Maintain+integrated+engine"></a>
+<h4>Step 5.1: Maintain integrated engine</h4>
+<p class="MsoNormal">Maintenance of View Processes in the case of the Integrated Engine should be facilitated by the fact that they are managed in the same environment as the Private Processes. In this way, inside-out changes, originating on the internal side, should have a direct impact on the View Processes and potential problems should be easily detected. Vice-versa is also true.</p>
+<a name="N10386"></a><a name="Step+5.2%3A+Maintain+application+interfaces"></a>
+<h4>Step 5.2: Maintain application interfaces</h4>
+<p class="MsoNormal">This is the case which is more likely to generate problems on the maintenance side:</p>
+<ul>
+<li>
+<p class="MsoNormal">Outside-in changes, from the CBP to View Processes down to the enterprise applications, might pose unexpected requirements to the interfaces that have been developed. For example, a new state or a new event type must be handled that requires a new call to be exposed by the underlying application. In the worst case, the application itself might have to be customized.</p>
+</li>
+<li>
+<p class="MsoNormal">Inside-out changes might cause unexpected problems on already running CBPs. For example, an application functionality change might impact the interface exposed to a View Process in unexpected ways. These problems are usually very hard to detect and may cause serious system disruptions.</p>
+</li>
+</ul>
+<a name="N10396"></a><a name="Step+5.3%3A+Maintain+private+engine"></a>
+<h4>Step 5.3: Maintain private engine</h4>
+<p class="MsoNormal">The management of change is not as complex as in the previous case, but still it requires a careful synchronization of changes between the two engines. In particular, the administrator of the Private Engine must be aware of changes on Private Processes that may impact the view processes, and take the necessary alignment actions. Automatic or semi-automatic alignment, via process model exchange tools, would improve this process.</p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

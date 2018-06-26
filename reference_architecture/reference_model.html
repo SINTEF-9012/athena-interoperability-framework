@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Interoperability reference architecture</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Reference architecture</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../reference_architecture/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Interoperability reference architecture</div>
+</div>
+<div class="menuitem">
+<a href="../reference_architecture/characterisation.html" title="Interoperability classification">Interoperability classification</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="reference_model.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Interoperability reference architecture</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Overview">Overview</a>
+<ul class="minitoc">
+<li>
+<a href="#Interoperability+levels">Interoperability levels</a>
+</li>
+<li>
+<a href="#Interoperability+approaches">Interoperability approaches</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="Overview"></a>
+<h2 class="underlined_10">Overview</h2>
+<div class="section">
+<p>The <strong>ATHENA Interoperability Framework (AIF)</strong> defines an <em>interoperability reference architecture</em> that relates the modelling solutions coming from the three different research areas of ATHENA, namely enterprise modelling, architectures and platforms, and ontology. The figure below illustrates the reference architecture that focuses on the <em>provided</em> and <em>required</em> artefacts of two collaborating enterprises.</p>
+<p>
+<img alt="" src="reference_model_files/reference_architecture.png"></p>
+<p>In this section we will formalise the representation of the reference architecture as a part of the <em>interoperability reference architecture</em> concept domain (defined in <strong>AIF conceptual model</strong>). A formalized view of the conceptual model is shown in the figure below and elaborated further below.</p>
+<p>
+<img alt="" src="reference_model_files/reference_architecture_uml.png"></p>
+<a name="N10032"></a><a name="Interoperability+levels"></a>
+<h3 class="underlined_5">Interoperability levels</h3>
+<p>An <em>interoperability reference architecture</em> relates a set of <em>interoperability levels</em> and a set of <em>interoperability approaches</em>. An <em>interoperability level</em> denotes the capability level of two or more <em>collaborating entities</em> to support interoperation.</p>
+<ul>
+<li>Interoperability at the <em>enterprise/business level</em> should be seen as the organisational and operational ability of an enterprise to factually co-operate with other, external organisations in spite of e.g. different working practices, legislations, cultures and commercial approaches. From an ICT system perspective it means that the ICT infrastructure is flexible and adaptable to the changing business requirements and the organisational structures of the enterprise.</li>
+<li>Interoperability at the <em>processes level</em> is the capability to make various processes work together. A process defines the sequence of the services (functions) according to some specific needs of a <em>collaborating entity</em>.</li>
+<li>Interoperability at the <em>services level</em> is concerned with identifying, composing and executing various applications (designed and implemented independently). Services are an abstraction and an encapsulation of the functionality provided and/or required by a <em>collaborating entity</em>.</li>
+<li>Interoperability at the <em>information/data level</em> is related to the management, exchange and processing of different documents, messages and/or structures by different <em>collaborating entities</em>.</li>
+</ul>
+<a name="N10065"></a><a name="Interoperability+approaches"></a>
+<h3 class="underlined_5">Interoperability approaches</h3>
+<p>The concept <em>interoperability approach</em> is here used to designate the six technology approaches resulting from the research activities performed in ATHENA. The interoperability approaches help us to support interoperations at the various <em>interoperability levels</em>.</p>
+<p>For each of these levels we prescribe a <em>model-driven interoperability</em> approach that cuts across the <em>interoperability levels</em> where models are used to formalise and exchange the provided and required artefacts that must be negotiated and agreed upon. ATHENA defines a set of metamodels and languages that can be supported by tools and methods to construct the models in question. Starting at the top:</p>
+<ul>
+<li>
+<em>Collaborative enterprise modelling</em> concerns the exchange and alignment of knowledge models for describing the processes, organisations, products and systems in the collaboration context. <em>Collaborative enterprise modelling</em> is supported by the POP* metamodel [ATHENA A1 2005a].</li>
+<li>Modelling of <em>cross-organisational business processes</em> focuses on defining process views that describes the interactions between two or more collaborating entities. In a networked enterprise, it is also necessary to study how to connect internal processes of two companies to create <em>cross-organisational business process</em>. This is supported by the CBP (cross-organisational business process) metamodel [ATHENA A2 2005b].</li>
+<li>
+<em>Flexible execution and composition of services</em> is concerned with identifying, composing and executing various applications. Modelling <em>flexible execution and composition of services</em> can be supported by the PIM4SOA (platform-independent model for service-oriented architecture) metamodel [ATHENA A6 2006b, Sourceforge.net 2006].</li>
+<li>
+<em>Information interoperability</em> is related to management, exchange and processing of different documents, messages and other information structures. The XML Schema Definition Language (XSD) [W3C 2004a] will be the foundation for ATHENA solutions at this <em>interoperability level</em>.</li>
+</ul>
+<p>To overcome the semantic barriers which emerge from different interpretations of syntactic descriptions, precise, computer processable meaning must be associated with the models expressed on the different levels. It has to be ensured that <em>semantics</em> are exchangeable and based on common understanding in order to enhance interoperability. This can be achieved using <em>ontologies</em> and an annotation formalism for defining meaning in the exchanged models. The OPAL (object, process, actor modelling language) [ATHENA A3 2005] is an ontology language that offers a number of modelling notions to more precisely define the meaning of concepts. This allows us to relate concepts at the different levels (ensuring consistency amongst the levels) and relate concepts at the same level e.g. supporting <em>information interoperability</em>.</p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

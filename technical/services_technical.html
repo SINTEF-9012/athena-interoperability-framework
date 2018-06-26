@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Flexible execution and composition of services</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="../images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="../images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li>
+<a class="base-not-selected" href="../index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="../reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="../guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li class="current">
+<a class="base-selected" href="../technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="../profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="../solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Technical architecture</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../technical/index.html" title="Introduction">Introduction</a>
+</div>
+<div class="menuitem">
+<a href="../technical/em_technical.html" title="Collaborative enterprise modelling">Collaborative enterprise modelling</a>
+</div>
+<div class="menuitem">
+<a href="../technical/cbp_technical.html" title="Cross-organisational business processes">Cross-organisational business processes</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Flexible execution and composition of services</div>
+</div>
+<div class="menuitem">
+<a href="../technical/information_technical.html" title="Information interoperability">Information interoperability</a>
+</div>
+<div class="menuitem">
+<a href="../technical/semantics_technical.html" title="Semantics and ontologies">Semantics and ontologies</a>
+</div>
+<div class="menuitem">
+<a href="../technical/mdi_technical.html" title="Model-driven interoperability">Model-driven interoperability</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="services_technical.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Flexible execution and composition of services</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#SOA+framework">SOA framework</a>
+</li>
+<li>
+<a href="#Modelling">Modelling</a>
+</li>
+<li>
+<a href="#Services">Services</a>
+</li>
+<li>
+<a href="#Agent">Agent</a>
+</li>
+<li>
+<a href="#Integrated+execution+platform">Integrated execution platform</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="SOA+framework"></a>
+<h2 class="underlined_10">SOA framework</h2>
+<div class="section">
+<p class="MsoBodyText">The framework for Rapid Prototyping of SOAs presented here is composed of three parts: a <em>modelling</em> part, a <em>service</em> part and an <em>autonomous agent</em> part.<em>modelling</em><em>service</em><em>autonomous agent</em>
+</p>
+<p class="MsoBodyText">The <em>modelling</em> part is concerned with applying Model-Driven Development (MDD) techniques and tools to the design of SOAs. It defines models and<em>modelling</em> transformations that are specific to the concepts used for SOAs, such as Web Service descriptions and plans for autonomous agents. The <em>service</em> part provides a highly flexible communication platform for Web services. The <em>autonomous agent</em> part deals both with designing and enacting service compositions as well as performing mediation, negotiation and brokering in SOAs.<em>service</em><em>autonomous agent</em>
+</p>
+<p>
+<img alt="" src="services_technical_files/servic15.gif"></p>
+<p class="MsoCaption">
+<a name="_Toc147244688"></a>Figure: SOA framework</p>
+</div>
+<a name="N10041"></a><a name="Modelling"></a>
+<h2 class="underlined_10">Modelling</h2>
+<div class="section">
+<p class="MsoBodyText">The <em>ATHENA baseline methodology for SOA</em> introduces a model-driven development (MDD) approach to specifying interoperable service-oriented architectures realized as Web services. In model-driven development are used models to describe business concerns, user requirements, activities, information structures, components and component interactions. These models govern the system development in that they can be transformed to program code. We aim to develop tools to automate model transformations for service-oriented architectures. Hence, the term model-driven development in our context encompasses both the development of models, and tools for model transformation.<em>ATHENA baseline methodology for SOA</em>
+</p>
+<p class="MsoBodyText">The models are expressed in UML, and supported by UML profiles for SOA and Web services. The baseline methodology provides guidelines for how to develop the different kinds of models recommended for SOA. Some of them lay the basis for automated code generation; all of them contribute to the understanding and specification of the system or services to be developed.</p>
+<p class="MsoBodyText">The PIM4SOA metamodel defines modelling concepts that can be used to model four different aspects or views of a SOA:</p>
+<ul>
+<li>
+<p class="MsoBodyText">
+<strong>Service:</strong> Services are an abstraction and an encapsulation of the functionality provided by an autonomous entity.</p>
+</li>
+<li>
+<p class="MsoBodyText">
+<strong>Information:</strong> Information is related to the messages or structures exchanged, processed and stored by software systems and components.</p>
+</li>
+<li>
+<p class="MsoBodyText">
+<strong>Process:</strong> Processes describe sequencing of work in terms of actions, control flows, information flows, interactions, protocols, etc.</p>
+</li>
+<li>
+<p class="MsoBodyText">
+<strong>Quality of service (QoS):</strong> Extra-functional qualities that can be applied to services, information and processes.</p>
+</li>
+</ul>
+<p class="MsoBodyText">Model transformations are developed according to the OMG Model Driven Architecture (MDA) (Soley 2000) approach between a Platform Independent Model (PIM) for SOA (PIM4SOA) and Platform Specific Models (PSMs) for describing Web services (XSD and WSDL), Jack BDI agents and BPEL (Andrews et al. 2003) processes. PIM4SOA is a visual PIM which specifies services in a technology independent manner. It represents an integrated view of the SOA in which different components can be deployed on different execution platforms. The PIM4SOA model helps us to align relevant aspects of enterprise and technical IT models, such as process, organisation and products models. This model allows us to raise the abstraction level at which we can talk about and reason on the architecture we design.</p>
+</div>
+<a name="N1006F"></a><a name="Services"></a>
+<h2 class="underlined_10">Services</h2>
+<div class="section">
+<p class="MsoBodyText">The part of our SOA Rapid Prototyping framework that deals with the enactment of Web services is composed of three tools which are arranged along a value chain: the WSDL Analyser, the Lyndon tool and the Johnson tool.</p>
+<ul>
+<li>
+<p class="MsoBodyText">The WSDL Analyzer is a tool for detecting similarities between Web service descriptions. The tool can be used to find a list of similar services and produces a mapping between messages, thereby enabling brokering and mediation of services. &nbsp;The algorithm of the WSDL Analyzer improves over an algorithm for finding structural similarities proposed by Wang and Stroulia (Wang et al. 2003) by taking into account additional features of the WSDL structure. More specifically, we make use of the <em>tree-edit distance</em> measure (Shasha et al. 1997) and the concept of a <em>weak subsumption relation</em> (Nagano et al. 2004).<em>tree-edit distance</em><em>weak subsumption relation</em>
+</p>
+</li>
+<li>
+<p class="MsoBodyText">Johnson is a runtime tool that enables users to enact most of the roles typically found in an SOA, thereby enacting complex SOA scenarios by sending real SOAP messages between Web services without having to write a single line of code. &nbsp;Johnson features a Web-based user interface designed to closely resemble Web-based email applications, with the only difference that SOAP messages and Web Services endpoints are used in place of email messages and email addresses. The user can see incoming SOAP messages in the Inbox and create outgoing SOAP messages in the Outbox that will be sent to external Web services. A powerful user-interface generator relieves the user from having to deal with XML documents by generating forms for displaying and editing any XML-based data type.</p>
+</li>
+<li>
+<p class="MsoBodyText">The Lyndon tool can be seen as the design-time counterpart of the Johnson tool. It analyses WSDL files and automatically configures Johnson for playing either the role of consumer or provider of the service described. Lyndon parses a WSDL file and determines which endpoints need to be created, and which processing chains need to be assigned to them. Determining which processing modules to include in the processing chain takes into account information extracted from the WSDL file as well as options set by the user. The user may, for example, specify whether Johnson should be configured as a service consumer or a service provider, or whether messages sent to or from the service should be logged. Some configuration information can be extracted from the WSDL file, such as the need for implementing the WS-Addressing specification, which is specified as part of the description of the bindings of a Web service.</p>
+</li>
+</ul>
+</div>
+<a name="N1008D"></a><a name="Agent"></a>
+<h2 class="underlined_10">Agent</h2>
+<div class="section">
+<p>The aim of the extended JACK agent framework for Web Services is to provide a goal-oriented service composition and execution module within an SOA.</p>
+<p>Following the Belief Desire Intention (BDI) model, agents are autonomous software components that have explicit goals to achieve or events to handle (desires). Agents are programmed with a set of plans to describe how to go about achieving desires. Each plan describes how to achieve a goal under varying circumstances. Set to work, the agent pursues its given goals (desires), adopting the appropriate plans (intentions) according to its current set of data (beliefs) about the state of the world. The combination of desires and beliefs initiating context-sensitive intended behaviour is part of what characterises a BDI agent.</p>
+<p>BDI agents exhibit reasoning behaviour under both pro-active (goal directed) and reactive (event driven) stimuli. Adaptive execution is introduced by flexible plan choice, in which the current situation in the environment is taken into account. A BDI agent has the ability to react flexibly to failure in plan execution. Agents cooperate by forming teams in order to achieve a common goal.</p>
+<p>The JACK agent platform is not inherently ready for interaction within a Web service environment. Additional steps are necessary for enabling interactions between the agent platform and Web services, especially when the agents themselves offer services. In this case, some tools are needed for generating the server and client-side code for using JACK inside a Web server.</p>
+<p>
+<img alt="" src="services_technical_files/jack.png"><br>
+<br>Figure 23: Extended JACK framework for service composition and execution</p>
+<p>Figure 23 is an overview of the extended JACK architecture for Web service composition and plan execution, with at its core the JACK agent framework with plan library and knowledge base. Following the MDA approach, a modeller specifies at design time a set of plans (PSM level) that constitute the workflow library of the agents. Web service calls are integrated as steps into plans. Workflows are modelled graphically and most of the common workflow patterns are supported.</p>
+<p>In order to prepare for a transformation from a PIM4SOA model to the JACK PSM, service providers are mapped to Jack agents/teams. The parts of the PIM which define the processes involved are mapped to agent/team plans and correlated events, whereas the parts which define the interfaces are mapped to the modules which provide the client- and server-side code for the JACK agent platform.</p>
+<p>Just like BPEL, our framework supports fixed composition, where the structure and the components of the composition are statically bound, and semi-fixed compositions, where the structure is statically bound but the actual service bindings are performed at runtime. More explorative compositions, where both structure and components are created at runtime, are beyond what BPEL or BDI agents can offer.</p>
+<p>However, there are several advantages to BDI agent, especially when it comes to handling failures at runtime. A plan is executed in a context which specifies conditions for plan instances and also other applicable plans. An exception in one plan instance then leads to the execution of another plan instance for the next known service. The BDI agent approach supports this adaptive behaviour in a natural way, whereas a BPEL process specification which attempts to provide the same behaviour would require awkward coding such as nested fault handlers.</p>
+<p>Another advantage is that extending the behaviour by adding a new plan for a specific task simply means adding it to the plan library for it to be executed at the next opportunity. Similarly, customizing the composition is facilitated since the different plans clearly structure the alternatives of possible actions. Since the control structure is implicit, changes in a plan do not have impact on the control structure.</p>
+</div>
+<a name="N100AA"></a><a name="Integrated+execution+platform"></a>
+<h2 class="underlined_10">Integrated execution platform</h2>
+<div class="section">
+<p>Development of the integrated execution platform and corresponding infrastructure services will be one of the focus areas of action line A5 and A6. The service bus consists of three main components:</p>
+<ol>
+<li>Service wrappers will provide a standardised way of accessing and using services. A first version of the service wrapper will be based on WSDL technology.</li>
+<li>Evaluation &amp; Negation of Available Functionality</li>
+<li>Service Interconnection Bus provides middleware services for integrating the various execution platforms.</li>
+</ol>
+<p>
+<img alt="" src="services_technical_files/servic16.gif"></p>
+<p>Services can be provided for internal use to support interoperability between business units within an enterprise, and for external use to support interoperability between enterprises. In addition to the middleware services provided by the service bus, there may be a need to develop or acquire specific infrastructure services within an organisation.</p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.7">
+<meta name="Forrest-skin-name" content="pelt">
+<meta name="generator" content="">
+<title>Specification of the AIF</title>
+<link type="text/css" href="skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="skin/print.css" rel="stylesheet">
+<link type="text/css" href="skin/profile.css" rel="stylesheet">
+<script src="skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<div class="breadtrail">
+<a href="http://www.athena-ip.org/">ATHENA</a><script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<div class="header">
+<div class="grouplogo">
+<a href="http://www.athena-ip.org"><img class="logoImage" alt="ATHENA" src="images/athena.png" title="ATHENA Integrated Project"></a>
+</div>
+<div class="projectlogoA1">
+<a href=""><img class="logoImage" alt="ATHENA Interoperability Framework (AIF)" src="images/aif.png" title="ATHENA Interoperability Framework (AIF)"></a>
+</div>
+<ul id="tabs">
+<li class="current">
+<a class="base-selected" href="index.html">Home</a>
+</li>
+<li>
+<a class="base-not-selected" href="reference_architecture/index.html">Reference architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="methodology/index.html">Interoperability methodology</a>
+</li>
+<li>
+<a class="base-not-selected" href="guidelines/index.html">Guidelines and best practices</a>
+</li>
+<li>
+<a class="base-not-selected" href="technical/index.html">Technical architecture</a>
+</li>
+<li>
+<a class="base-not-selected" href="profiles/index.html">Interoperability profiles</a>
+</li>
+<li>
+<a class="base-not-selected" href="solutions/index.html">ATHENA solutions</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<div id="level2tabs"></div>
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="breadtrail">
+             
+             &nbsp;
+           </div>
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', 'skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('skin/images/chapter_open.gif');">Introduction</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="index.html" title="Welcome">Welcome</a>
+</div>
+<div class="menuitem">
+<a href="motivation.html" title="Background and motivation">Background and motivation</a>
+</div>
+<div class="menuitem">
+<a href="framework.html" title="Overview of the AIF">Overview of the AIF</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Specification of the AIF</div>
+</div>
+<div class="menuitem">
+<a href="references.html" title="References">References</a>
+</div>
+<div class="menuitem">
+<a href="wholesite.html">Whole site HTML</a>
+</div>
+<div class="menuitem">
+<a href="wholesite.pdf">Whole site PDF</a>
+</div>
+</div>
+<div class="searchbox">
+<hr>
+<form action="http://www.google.com/search" method="get">
+<input value="athena-ip.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="18" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                  <input attr="value" name="Search" value="Search" type="submit">
+</form>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<div id="credit2"></div>
+</div>
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="model.pdf"><img alt="PDF -icon" src="skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Specification of the AIF</h1>
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#AIF+conceptual+model">AIF conceptual model</a>
+</li>
+<li>
+<a href="#AIF+knowledge+model">AIF knowledge model</a>
+</li>
+<li>
+<a href="#ATHENA+knowledge+base">ATHENA knowledge base</a>
+</li>
+</ul>
+</div>
+<a name="N10010"></a><a name="AIF+conceptual+model"></a>
+<h2 class="underlined_10">AIF conceptual model</h2>
+<div class="section">
+<p>The ATHENA Interoperability Framework (AIF) provides a compound framework and associated reference architecture for capturing the research elements and solutions to interoperability issues that address the problem in a holistic way by inter-relating relevant information from different perspectives of the enterprise. The specification of the AIF has been formalised using a model-driven approach. This has resulted in the development of an <strong>AIF conceptual model</strong>. The conceptual model is structured into separate model packages covering specific concept domains that we see relevant for addressing interoperability. Each package contains descriptions of the concepts and their relationships (both within and across the concept domains).</p>
+<p>
+<img alt="" src="model_files/conceptual_model.png"></p>
+<p>A short description of the different concept domains are given below:</p>
+<ul>
+<li>Collaboration space: This domain defines the concepts for a collaboration space which is an environment that provides an infrastructure to support collaboration between members of a virtual enterprise network.</li>
+<li>Interoperability business analysis: This domain defines the concepts for interoperability business analysis which focuses on capturing business needs and interoperability issues and finding appropriate technical solutions.</li>
+<li>Interoperability classification: This domain defines the concepts for classification of interoperability problems and solutions.</li>
+<li>Interoperability framework: This domain defines the concepts for an interoperability framework.</li>
+<li>Interoperability methodology: This domain defines the concepts for an interoperability methodology.</li>
+<li>Interoperability modelling: This domain defines the concepts for interoperability modelling that focuses on capturing essential information relevant to enterprise collaboration as formalised models.</li>
+<li>Interoperability profile: This domain defines the concepts for an interoperability profile. An interoperability profile defines a set of results or specifications that work together. It consists of interoperability guidelines, specifications, and integrated and configured solutions from the conceptual, applicative and technical parts of the AIF.</li>
+<li>Interoperability reference architecture: This domain defines the concepts for an interoperability reference architecture which relates the different approaches to interoperability coming from the different research areas of ATHENA.</li>
+<li>Solution space: This domain defines the concepts for a solution space which defines a structuring of solutions for interoperability problems.</li>
+<li>Technical architecture: This domain defines the concepts for a technical architecture which provides a blueprint for implementing your technical interoperability ICT infrastructure.</li>
+</ul>
+</div>
+<a name="N10034"></a><a name="AIF+knowledge+model"></a>
+<h2 class="underlined_10">AIF knowledge model</h2>
+<div class="section">
+<p>Alongside the conceptual model we have developed a partial instance model [ATHENA 2007b] that describes essential artefacts of the ATHENA universe (solutions, methods, deliverables, etc.) and how these are related. The AIF knowledge model has been developed using the enterprise architecture modelling tool Metis [Troux Technologies] and is shown in Figure 81 below. The model serves two purposes. Firstly it has helped us to reason about the concepts, structure and relationships in the specification of the AIF, and secondly it provides a &ldquo;proof of concept&rdquo; in the validation of the AIF.</p>
+<p>
+<img alt="" src="model_files/model.gif"></p>
+</div>
+<a name="N1003E"></a><a name="ATHENA+knowledge+base"></a>
+<h2 class="underlined_10">ATHENA knowledge base</h2>
+<div class="section">
+<p>Whereas the AIF knowledge model was developed primarily from a top-down perspective, a parallel modelling effort in the requirements and piloting activities of ATHENA developed the ATHENA knowledge base from a bottom-up perspective. The knowledge base establishes relationships between requirements, interoperability issues, generic solutions and solutions using the different models produced by ATHENA projects (e.g. AIF and BIF). It was decided that the different model views of ATHENA needed to be implemented as a federation of models that would be available as a Web resource to support the pilot users. The Ontology Web Language (OWL) is a technology that was designed to provide a common way to process the content of Web information and was chosen as the vehicle for implementing the knowledge base. The selected OWL editor was Prot&eacute;g&eacute; [Stanford Medical Informatics].</p>
+<p>Once the knowledge model was created it was also important to provide querying and filtering mechanisms for the users in order to exploit the knowledge base. Prot&eacute;g&eacute; comes with a built-in visualisation mechanism to graphically visualize and navigate the knowledge model. Figure 82 below shows a visual representation of the knowledge model. As can be seen it resembles the AIF knowledge model described above. The difference is mainly that the AIF knowledge model is wider in scope but only contains content examples to validate the conceptual model, whereas the ATHENA knowledge base is more focused (in particular relating requirements, interoperability issues to solutions) and is fully populated for this purpose.</p>
+<p>
+<img alt="" src="model_files/knowledge_base.png"></p>
+</div>
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("<text>Last Published:</text> " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2004-2006 <a href="http://www.athena-ip.org">The ATHENA Consortium.</a>
+</div>
+</div>
+</body>
+</html>
